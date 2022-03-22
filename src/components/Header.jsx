@@ -68,7 +68,7 @@ export default () => {
                 {mobileMenu ? <div className="close-mobile" onClick={() => dispatch(hideMobileMenu())}><Arrow/></div> : <Menu onClick={() => dispatch(showMobileMenu())}/> }
                 <div className="balance" onClick={() => dispatch(showDeposit())}>
                     <Fuel/>
-                    <span>{user?.walletsBalance[0].amount}</span>
+                    <span>{user?.balance}</span>
                     <div className="balance-add"><Plus/></div>
                 </div>
                 { user ? <Link to={"/profile/" + user?.steamId} className={"user "  +  (user.level < 10 ? 'grey' : user.level < 20 ? 'blue' : user.level < 40 ? 'yellow' : user.level < 60 ? 'orange' : user.level < 80 ? 'violet' : user.level < 90 ? 'red' : user.level <= 100 ? 'fire' : '' )}>

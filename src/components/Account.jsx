@@ -43,7 +43,7 @@ export default ({ mobile = false }) => {
                     <div className={"level " +  (user.level < 10 ? 'grey' : user.level < 20 ? 'blue' : user.level < 40 ? 'yellow' : user.level < 60 ? 'orange' : user.level < 80 ? 'violet' : user.level < 90 ? 'red' : user.level <= 100 ? 'fire' : '' )}>{user.level}</div> 
                     <div className="account-nav-name-balance" onClick={() => mobile ? dispatch(showDeposit()) : false }>
                         <Fuel/>
-                        <span>{user.walletsBalance[0].amount}</span>
+                        <span>{user.balance}</span>
                     </div>
                 </div>
             </Link>

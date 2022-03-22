@@ -79,13 +79,13 @@ export const amountReducer = ( state = initialState, action ) => {
                 ...state, 
                 // amount: action.payload.user.walletsBalance[0].amount < 1 ? action.payload.user.walletsBalance[0].amount : 1, 
                 amount: '', 
-                maxAmount: (action.payload.data?.maxBet || state.maxAmount) < action.payload.user.walletsBalance[0].amount ? (action.payload.data?.maxBet || state.maxAmount) : action.payload.user.walletsBalance[0].amount,
+                maxAmount: (action.payload.data?.maxBet || state.maxAmount) < action.payload.user.balance ? (action.payload.data?.maxBet || state.maxAmount) : action.payload.user.balance,
                 minAmount: (action.payload.data?.minBet || state.minAmount),
             }
         case UPDATE_AMOUNT:
             return { 
                 ...state, 
-                maxAmount: (action.payload.data?.maxBet || state.maxAmount) < action.payload.user.walletsBalance[0].amount ? (action.payload.data?.maxBet || state.maxAmount) : action.payload.user.walletsBalance[0].amount,
+                maxAmount: (action.payload.data?.maxBet || state.maxAmount) < action.payload.user.balance ? (action.payload.data?.maxBet || state.maxAmount) : action.payload.user.balance,
                 minAmount: (action.payload.data?.minBet || state.minAmount),
             }
         default: 
