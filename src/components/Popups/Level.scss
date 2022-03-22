@@ -1,0 +1,60 @@
+.level-popup{
+    width: 544px;
+    height: 415px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 35px;
+    .flags{
+        position: absolute;
+        top: 17px;
+        width: 100%;
+    }
+    &-new{
+        color: #E8E13F;
+        font-size: 0.9rem;
+        line-height: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    &-level{
+        color: #E8E13F;
+        font-size: 5rem;
+        line-height: 5rem;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+    &-open{
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.6rem;
+        line-height: 0.8rem;
+        margin-bottom: 10px;
+    }
+    &-car{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        img{
+            width: 145px;
+            height: 108px;
+            z-index: 1;
+        }
+        .blur{
+            position: absolute;
+            width: 180px;
+            height: 100px;
+            background: #E8E13F;
+            opacity: 0.4;
+            filter: blur(40px);
+        }
+    }
+    &-continue{
+        width: 105px;
+        height: 33px;
+    }
+    .close-popup{
+        display: none;
+    }
+}

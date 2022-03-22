@@ -1,0 +1,117 @@
+
+.fair {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    padding-top: 20px;
+    width: 100%;
+    &-header{
+        color: #E8E13F;
+        font-size: 1.2rem;
+        line-height: 1.15rem;
+        font-weight: 600;
+        margin-bottom: 6px;
+    }
+    &-updated{
+        color: rgba(#C0C6D8, .5);
+        margin-bottom: 5px;
+        font-size: 0.7rem;
+    }
+    &-body{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        h2{
+            color: #C0C6D8;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+
+        }
+        p{
+            color: #C0C6D8;
+            font-size: 0.7rem;
+            line-height: 155%;
+        }
+    }
+    &-code {
+        background-color: #1a1a18;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        margin: 0 auto;
+        .hljs{
+            width: calc(100vw - 660px) !important;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+        }
+        .editor{
+            word-wrap: break-word;
+        }
+        // .ace_scroller{
+        //     &::-webkit-scrollbar{
+        //         display: none;
+        //     }
+        // }
+        // .ace_scrollbar-v{
+        //     &::-webkit-scrollbar{
+        //         display: none;
+        //     }
+        // }
+        // .ace-tomorrow-night{
+        //     background: #1B1F2A;
+        //     .ace_gutter {
+        //         background-color: lighten(#1B1F2A, 3%);
+        //     }
+        //     .ace_print-margin {
+        //         display: none;
+        //     }
+        // }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .fair {
+        &-header{
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+        }
+        &-body{
+            p{
+                font-size: 1rem;
+                line-height: 1.2rem;
+            }
+        }
+        &-code {
+            .editor{
+                width: calc(100vw - 870px) !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .fair {
+        &-header{
+            color: #E8E13F;
+            font-size: 0.9rem;
+            line-height: 1.25rem;
+            margin-bottom: 14px;
+        }
+        &-body{
+            margin-bottom: 28px;
+        }
+        &-code {
+            background-color: #1a1a18;
+            overflow-x: hidden;
+            margin: 0 auto;
+            .editor{
+                width: calc(100vw - 30px) !important;
+            }
+        }
+    }
+}

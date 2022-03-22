@@ -1,0 +1,12 @@
+{
+    "roullete" : "Roulette",
+    "recent" : "История",
+    "betAmount" : "Сумма ставки",
+    "amount" : "Ставка",
+    "placeBet" : "Сделать ставку",
+    "maxBet" : "Макс. ставка",
+    "maxWin" : "Макс. выигрыш",
+    "last" : "ПОСЛЕДНИЕ",
+    "bankroll" : "БАНКРОЛЛ",
+    "clear" : "Очистить"
+}

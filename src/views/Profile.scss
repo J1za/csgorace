@@ -1,0 +1,887 @@
+.profile{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    &-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 21px;
+        h1{
+            color: #E8E13F;
+            font-size: 1.2rem;
+            line-height: 1.15rem;
+            font-weight: bold;
+        }
+        &-streamer{
+            display: flex;
+            align-items: center;
+            svg{
+                margin-right: 11px;
+            }
+            span{
+                color: #FFFFFF;
+                font-size: 0.7rem;
+                line-height: 1rem;
+                font-weight: bold;
+                cursor: pointer;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            .switch{
+                margin-left: 40px;
+                background: #585858;
+                border-radius: 24px;
+                width: 41px;
+                height: 23px;
+                padding: 2px 3px;
+                display: flex;
+                cursor: pointer;
+                transition-duration: .2s;
+                span{
+                    display: flex;
+                    background: rgba(255, 255, 255, 0.4);
+                    border-radius: 24px;
+                    width: 19px;
+                    height: 19px;
+                    transition-duration: .2s;
+                }
+                &.active{
+                    background: #46BE60;
+                    span{
+                        margin-left: 16px;
+                        background: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+    &-account{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 24px;
+        .account-data{
+            display: flex;
+            align-items: center;
+            .image{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                margin-right: 18px;
+                border: 3px solid rgba(255, 255, 255, 0.2);
+                border-radius: 17px;
+                // width: 100px;
+                // height: 100px;
+                padding: 2px;
+                &.grey{
+                    border-color: #A3A5B7;
+                }
+                &.blue{
+                    border-color: #93C7F4;
+                }
+                &.yellow{
+                    border-color: #E8E13F;
+                }
+                &.orange{
+                    border-color: #E8903F;
+                }
+                &.violet{
+                    border-color: #BC93FE;
+                }
+                &.red{
+                    border-color: #E8533F;
+                }
+                &.fire{
+                    border-color: #FD6228;
+                }
+                img{
+                    border-radius: 12px;
+                    width: 51px;
+                    height: 51px;
+                    // &.streamer{
+                    //     filter: blur(5px);
+                    // }
+                }
+                .level{
+                    width: 22px;
+                    height: 22px;
+                    font-size: .5rem;
+                    line-height: .6rem;
+                    bottom: -11px;
+                }
+            }
+            .info{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                &-name{
+                    color: #FFFFFF;
+                    font-size: 0.8rem;
+                    line-height: 1.1rem;
+                    margin-bottom: 9px;
+                }
+                &-level{
+                    display: flex;
+                    align-items: center;
+                    &-num{
+                        position: static;
+                        margin-top: 0px;
+                        height: 24px;
+                        border-radius: 8px;
+                        padding: 0px 12px;
+                        color: #000000;
+                        font-size: 0.6rem;
+                        font-weight: bold;
+                        background-color: rgba(#fff, .1);
+                        min-width: 30px;
+                        text-align: center;
+                        line-height: 0.8rem;
+                        margin-right: 4px;
+                        display: flex;
+                        align-items: center;
+                    }
+                    &.grey{
+                        .info-level-num{
+                            background-color: #A3A5B7;
+                            color: #000000;
+                        }
+                        .line-wrapper{
+                            background: rgba(#A3A5B7, .1);
+                            border: 1px solid #A3A5B7;
+                            .line{
+                                background-color: #A3A5B7;
+                            }
+                        }
+                    }
+                    &.blue{
+                        .info-level-num{
+                            background: rgba(#93C7F4, .1);
+                            color: #000000;
+                        }
+                        .line-wrapper{
+                            background-color: #93C7F4;
+                            border: 1px solid #93C7F4;
+                            .line{
+                                background-color: #93C7F4;
+                            }
+                        }
+                    }
+                    &.yellow{
+                        .info-level-num{
+                            background-color: #E8E13F;
+                            color: #000000;
+                        }
+                        .line-wrapper{
+                            background: rgba(#E8E13F, .1);
+                            border: 1px solid #E8E13F;
+                            .line{
+                                background-color: #E8E13F;
+                            }
+                        }
+                    }
+                    &.orange{
+                        .info-level-num{
+                            background-color: #E8903F;
+                            color: #000000;
+                        }
+                        .line-wrapper{
+                            background: rgba(#E8903F, .1);
+                            border: 1px solid #E8903F;
+                            .line{
+                                background-color: #E8903F;
+                            }
+                        }
+                    }
+                    &.violet{
+                        .info-level-num{
+                            background-color: #BC93FE;
+                            color: #000000;
+                        }
+                        .line-wrapper{
+                            background: rgba(#BC93FE, .1);
+                            border: 1px solid #BC93FE;
+                            .line{
+                                background-color: #BC93FE;
+                            }
+                        }
+                    }
+                    &.red{
+                        .info-level-num{
+                            background-color: #E8533F;
+                            color: #000000;
+                        }
+                        .line-wrapper{
+                            background: rgba(#E8533F, .1);
+                            border: 1px solid #E8533F;
+                            .line{
+                                background-color: #E8533F;
+                            }
+                        }
+                    }
+                    &.fire{
+                        .info-level-num{
+                            background-color: #FD6228;
+                            color: #000000;
+                        }
+                        .line-wrapper{
+                            background: rgba(#FD6228, .1);
+                            border: 1px solid #FD6228;
+                            .line{
+                                background-color: #FD6228;
+                            }
+                        }
+                    }
+                    .line-wrapper{
+                        width: 200px;
+                        height: 24px;
+                        display: flex;
+                        align-items: center;
+                        border-radius: 8px;
+                        position: relative;
+                        overflow: hidden;
+                        .line-xp-value{
+                            color: #141720;
+                            padding-left: 12px;
+                            font-weight: 900;
+                            font-size: 0.6rem;
+                            line-height: 0.8rem;
+                            position: relative;
+                            z-index: 1;
+                            padding-right: 12px;
+                        }  
+                        .line{
+                            height: 100%;
+                            display: flex;
+                            left: 0px;
+                            top: 0px;
+                            position: absolute;
+                        }
+                    }
+                    .line-xp{
+                        color:  rgba(#fff, .7);
+                        font-weight: 900;
+                        font-size: 0.6rem;
+                        line-height: 0.8rem;
+                        margin-left: 5px;
+                    }          
+                }
+            }
+        }
+        .account-nav{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            &-mobile-balance{
+                display: none;
+            }
+            &-fuel{
+                display: flex;
+                align-items: center;
+                margin-bottom: 6px;
+                span{
+                    color: #FFFFFF;
+                    font-size: 0.7rem;
+                    line-height: 1rem;
+                    font-weight: bold;
+                    margin-left: 6px;
+                }
+            }
+            &-btns{
+                display: flex;
+                align-items: center;
+                .account-nav-cash{
+                    background: rgba(232, 225, 63, 0.1);
+                    width: 105px;
+                    height: 33px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 8px;
+                    color: #E8E13F;
+                    font-size: 0.5rem;
+                    line-height: 0.7rem;
+                    margin-right: 11px;
+                }
+                .account-nav-deposit{
+                    width: 105px;
+                }
+            }
+        }
+    }
+    &-settings{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        &.start{
+            justify-content: flex-start;
+        }
+        &-data-blocks{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            & > div{
+                &:not(:last-child){
+                    margin-right: 20px;
+                }
+            }
+        }
+        &-winrate{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex: 1;
+            min-width: 285px;
+            height: 203px;
+            background: #46BE60;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            padding-top: 35px;
+            padding-left: 17px;
+            margin-right: 0px !important;
+            span{
+                color: #FFFFFF;
+                font-size: 0.8rem;
+                line-height: 1.1rem;
+            }
+            .value{
+                color: #FFFFFF;
+                font-size: 1.6rem;
+                line-height: 103%;
+                font-weight: 800;
+            }
+            img{
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+            }
+        }
+        &-totalbet{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex: 1;
+            min-width: 285px;
+            height: 203px;
+            background: #E8E13F;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            padding-top: 35px;
+            padding-left: 17px;
+            display: none;
+            span{
+                color: #FFFFFF;
+                font-size: 0.8rem;
+                line-height: 1.1rem;
+            }
+            .value{
+                color: #FFFFFF;
+                font-size: 1.6rem;
+                line-height: 103%;
+                font-weight: 800;
+            }
+            img{
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+            }
+        }
+        &-totalwith{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex: 1;
+            min-width: 285px;
+            height: 203px;
+            background: #4B68FF;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            padding-top: 35px;
+            padding-left: 17px;
+            display: none;
+            span{
+                color: #FFFFFF;
+                font-size: 0.8rem;
+                line-height: 1.1rem;
+            }
+            .value{
+                color: #FFFFFF;
+                font-size: 1.6rem;
+                line-height: 103%;
+                font-weight: 800;
+            }
+            img{
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+            }
+        }
+        &-inputs{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 17px;
+            width: 100%;
+            .input-wrapper{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                a, span{
+                    color: rgba(255, 255, 255, 0.6);
+                    font-size: 0.6rem;
+                    line-height: 0.8rem;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+                &-nav{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    width: 100%;
+                    .input-content{
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        height: 35px;
+                        background: #1B1F2A;
+                        border: 1px solid #2A2E3D;
+                        border-radius: 8px;
+                        margin-right: 18px;
+                        a{
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 0px;
+                            margin-left: 6px;
+                            svg{
+                                path{
+                                    stroke: #fff;
+                                }
+                            }
+                        }
+                    }
+                    input{
+                        width: 100%;
+                        height: 100%;
+                        margin-left: 6px;
+                        padding: 0px 16px;
+                        padding-left: 6px;
+                        color: #FFFFFF;
+                        font-size: 0.7rem;
+                        line-height: 1rem;
+                        font-weight: bold;
+                        &.streamer{
+                            filter: blur(6px);
+                        }
+                    }
+                    button{
+                        background: #E8E13F;
+                        border-radius: 8px;
+                        width: 105px;
+                        min-width: 105px;
+                        height: 35px;
+                        font-size: 0.5rem;
+                        line-height: 0.7rem;
+                        font-weight: bold;
+                    }
+                    .user-win{
+                        background: #46BE60;
+                        span{
+                            color: #141720;
+                            font-size: 0.5rem;
+                            line-height: 0.7rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-statistic{
+        display: flex;
+        align-items: flex-start;
+        margin-top: 53px;
+        .car-image{
+            width: 400px;
+            height: 300px;
+            object-fit: contain;
+        }
+        .car{
+            width: calc(50% - 13px);
+            min-width: 480px;
+            height: 376px;
+            background: #1B1F2A;
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 26px;
+            &-info{
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                padding-top: 16px;
+                border-top: 1px solid rgba(255, 255, 255, 0.2);
+                &-username{
+                    color: #E8E13F;
+                    font-size: 0.6rem;
+                    line-height: 0.8rem;
+                    font-weight: bold;
+                    // text-shadow: 0px 0px 60px #E8E13F;
+                }
+                &-percent{
+                    display: flex;
+                    align-items: center;
+                    span{
+                        color: #E8E13F;
+                        font-size: 0.6rem;
+                        line-height: 0.8rem;
+                        margin-right: 7px;
+                    }
+                    .percent-line{
+                        background: rgba(232, 225, 63, 0.1);
+                        border-radius: 35px;
+                        height: 4px;
+                        width: 140px;
+                        &-value{
+                            background: #E8E13F;
+                            border-radius: 35px;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-history{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 32px;
+        &-title{
+            color: #E8E13F;
+            font-size: 1.2rem;
+            line-height: 1.15rem;
+            font-weight: bold;
+            margin-bottom: 24px;
+        }
+        .table{
+            display: flex;
+            flex-direction: column;
+
+            &-header{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: space-between;
+                background: #1B1F2A;
+                border-radius: 12px;
+                height: 55px;
+                padding: 6px;
+                margin-bottom: 25px;
+                &-item{
+                    flex: 1;
+                    height: 100%;
+                    color: rgba(255, 255, 255, 0.2);
+                    font-size: 0.9rem;
+                    line-height: 1.2rem;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 12px;
+                    transition-duration: .2s;
+                    cursor: pointer;
+                    &:hover{
+                        background: #E8E13F;
+                        color: #141720;
+                    }
+                    &.active {
+                        background: #E8E13F;
+                        color: #141720;
+                    }
+                }
+            }
+            &-body{
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                width: 100%;
+                padding-bottom: 20px;
+                &-item{
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    height: 56px;
+                    padding: 0px 16px;
+                    cursor: pointer;
+                    background: #1B1F2A;
+                    border-radius: 12px;
+                    &:not(:last-child){
+                        margin-bottom: 10px;
+                    }
+                    // &:nth-child(odd) {
+                    //     background: rgba(255, 255, 255, 0.07);
+                    // }
+                    .result {
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 7px;
+                        margin-right: 15px;
+                        &.win {
+                            background: #00CE78;
+                        }
+                        &.lose {
+                            background: #D7392F;
+                        }
+                        &.between {
+                            background: #FFC700;
+                        }
+                    }
+                    .date{
+                        color: rgba(255, 255, 255, 0.6);
+                        font-size: 0.6rem;
+                        line-height: 0.8rem;
+                        font-weight: bold;
+                    }
+                    .value{
+                        flex: 1;
+                        display: flex;
+                        justify-content: flex-end;
+                        color: #FFB800;
+                        font-size: 0.7rem;
+                        line-height: 1rem;
+                        font-weight: bold;
+                    }
+                    svg{
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 2020px) {
+    .profile{
+        &-settings{
+            flex-direction: row-reverse;
+            &-data-blocks{
+                margin-right: 20px;
+                & > div{
+                    &:not(:last-child){
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    .profile{
+        &-settings{
+            &-totalbet{
+                display: flex;
+                margin-right: 0px !important;
+            }
+            &-winrate{
+                display: flex;
+                margin-right: 20px !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .profile{
+        &-settings{
+            &-totalwith{
+                display: flex;
+            }
+            &-totalbet{
+                display: flex;
+                margin-right: 20px !important;
+            }
+            &-winrate{
+                display: flex;
+                margin-right: 20px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .profile{
+        &-header{
+            margin-bottom: 9px;
+            h1{
+                font-size: 0.9rem;
+                line-height: 1.15rem;
+            }
+            &-streamer{
+                display: none;
+            }
+        }
+        &-account{
+            flex-direction: column-reverse;
+            .account-data{
+                width: 100%;
+                justify-content: flex-start;
+                .info{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+            }
+            .account-nav{
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                height: 93px;
+                width: 100%;
+                background: #4B68FF;
+                border-radius: 8px;
+                padding: 0px 11px;
+                position: relative;
+                margin-bottom: 16px;
+                overflow: hidden;
+                &-mobile-balance{
+                    display: block;
+                    position: absolute;
+                    left: -8px;
+                    bottom: -24px;
+                    z-index: 0;
+                }
+                &-fuel{
+                    z-index: 1;
+                    margin-bottom: 0px;
+                }
+                &-btns{
+                    .account-nav-cash{
+                        width: 94px;
+                        color: #FFFFFF;
+                    }
+                    .account-nav-deposit{
+                        width: 94px;
+                        background-color: #fff;
+                        color: #4B68FF;
+                    }
+                }
+            }
+        }
+        &-settings{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            overflow: hidden;
+            &-data-blocks{
+                flex-direction: column;
+            }
+            &-winrate, &-totalwith, &-totalbet{
+                width: 100%;
+                height: 119px;
+                min-height: 119px;
+                margin-bottom: 16px;
+                padding-top: 0px;
+                justify-content: center;
+                display: flex;
+                margin-right: 0px !important;
+                img{
+                   width: 168px; 
+                   height: 112px;
+                }
+            }
+            &-totalwith, &-totalbet{
+                img{
+                    width: 110px;
+                    height: 100px;
+                }
+            }
+            // &-totalwith{
+            //     display: flex;
+            // }
+            // &-totalbet{
+            //     display: flex;
+            //     margin-right: 20px !important;
+            // }
+            // &-winrate{
+            //     display: flex;
+            //     margin-right: 20px !important;
+            // }
+            &-inputs{
+                width: 100%;
+                margin-left: 0px;
+                .input-wrapper{
+                    &-nav{
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 10px;
+                        width: 100%;
+                        input{
+                            flex: 1;
+                        }
+                    }
+                }
+            }
+        }
+        &-statistic{
+            flex-direction: column;
+            margin-top: 16px;
+            overflow-x: hidden;
+            padding-bottom: 32px;
+            .car{
+                width: 100%;
+                min-width: unset;
+                height: 236px;
+                padding: 18px;
+                margin-right: 0px;
+                margin-bottom: 16px;
+                img{
+                    width: 80%;
+                    object-fit: contain;
+                    max-height: 160px;
+                }
+            }
+        }
+        &-history{
+            margin-top: 0px;
+            .table{
+                &-header{
+                    width: 100%;
+                    justify-content: space-between;
+                    height: 50px;
+                    margin-bottom: 15px;
+                    overflow-y: hidden;
+                    overflow-x: scroll;
+                    &::-webkit-scrollbar{
+                        display: none;
+                    }
+                    &-item{
+                        min-width: 88px;
+                        font-size: 0.5rem;
+                        line-height: 0.7rem;
+                    }
+                }
+                &-body{
+                    padding-bottom: 10px;
+                    &-item{
+                        height: 47px;
+                        padding: 0px 12px;
+                        &:not(:last-child){
+                            margin-bottom: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+.select {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+    cursor: pointer;
+    &-active{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 12px;
+        border: 1px solid #2A2E3D;
+        border-radius: 8px;
+        position: relative;
+        background: #1B1F2A;
+        .title{
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.6rem;
+            line-height: 0.8rem;
+            margin-right: 20px;
+            width: 120px;
+            white-space: nowrap;
+        }
+        span {
+            width: 100%;
+            color: #FFFFFF;
+            font-size: 0.6rem;
+            line-height: 0.8rem;
+            font-weight: normal;
+        }
+        svg {
+            transition-duration: .2s;
+            path{
+                stroke: #E8E13F;
+            }
+        }
+    }
+    &-list {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #757575;
+        top: 44px;
+        border-radius: 8px;
+        list-style-type: none;
+        background-color: #1B1F2A;
+        overflow: hidden;
+        transition-duration: .2s;
+        max-height: 20px;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 2;
+        &-item {
+            height: 36px;
+            min-height: 36px;
+            display: flex;
+            align-items: center;
+            padding: 0px 12px;
+            color: #fff;
+            transition-duration: .2s;
+            font-size: 0.6rem;
+            line-height: 0.8rem;
+            &:hover {
+                background-color: lighten(#12161C, 3%);
+            }
+        }
+    }
+    &.active {
+        .select-active {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+        .select-list{ 
+            max-height: 300px;
+            opacity: 1;
+            visibility: visible;
+            z-index: 2;
+        }
+    }
+}

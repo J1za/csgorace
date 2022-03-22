@@ -1,0 +1,9 @@
+{
+    "fair": "Provably Fair",
+    "header1" : "How it works?",  
+    "header2" : "So it means we know all results in advance?",  
+    "text1" : "Before launching the server we have pre-generated 2 million hashes using the SHA256 algorithm. Each hash is a number in a hexadecimal numeral system or, simply put, a string of symbols, each symbol is generated using the previous one, so if you know a hash at some position you can check all the hashes coming after it. So we are unable to change hashes and their order, which removes the possibility of fraud from our side.",
+    "text2" : "You may ask: “So it means you know all the results in advance?”",
+    "text3" : "Basically, not. The result of the round is generated from a salted hash, which forms in a next way: we take the hash from the list in reverse order (for the 1st round we will use the 2000000th hash and so on) then it is upgraded using the hour of the beginning of the round and its id as parameters. We do not know when each round starts, so we can not know their salted hashes and results. All details you can find in the code below.",
+    "text4" : "And last but not least, there are functions for each game mode, which accept the salted hash of the round and retrieve its result. You can acquaint yourself with them in the code below."
+}

@@ -1,0 +1,32 @@
+.hash{
+    color: #757575;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+    .latency{
+        margin-left: 4px;
+        width: 6px;
+        height: 6px;
+        display: flex;
+        border-radius: 10px;
+        background-color: transparent;
+        &.green{
+            background-color: #00CE78;
+        }
+        &.orange{
+            background-color: #d07d12;
+        }
+        &.red{
+            background-color: #ff1818;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .hash{
+        display: none;
+    }
+}

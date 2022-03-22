@@ -1,0 +1,148 @@
+.loader {
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    background: #141720;
+    transition-duration: .2s;
+    .lds-ripple {
+        display: inline-block;
+        position: relative;
+        width: 120px;
+        height: 120px;
+        div {
+            position: absolute;
+            border: 4px solid #4B68FF;
+            opacity: 1;
+            border-radius: 50%;
+            animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+            &:nth-child(2) {
+                animation-delay: -0.5s;
+            }
+        }
+    }
+    svg{
+        width: 15vw;
+        height: 15vh; 
+        animation: pulse .8s ease infinite forwards; 
+    }
+    &.disable{
+        animation: disable .5s ease alternate 1 forwards;
+    }
+}  
+
+@keyframes pulse {
+    0%{
+        transform: scale(1)
+    }
+    50%{
+        transform: scale(1.2)
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+
+@keyframes lds-ripple {
+    0% {
+        top: 60px;
+        left: 60px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        width: 120px;
+        height: 120px;
+        opacity: 0;
+    }
+}
+
+@keyframes disable {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes lds-ripple-mobile {
+    0% {
+        top: 30px;
+        left: 30px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        width: 60px;
+        height: 60px;
+        opacity: 0;
+    }
+}
+
+@keyframes disable-mobile {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .loader {
+        width: 100%;
+        height: calc(var(--vh, 1vh) * 100);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 100;
+        background: #141720;
+        transition-duration: .2s;
+        .lds-ripple {
+            display: inline-block;
+            position: relative;
+            width: 60px;
+            height: 60px;
+            div {
+                position: absolute;
+                border: 2px solid #4B68FF;
+                opacity: 1;
+                border-radius: 50%;
+                animation: lds-ripple-mobile 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+                &:nth-child(2) {
+                    animation-delay: -0.5s;
+                }
+            }
+        }
+        svg{
+            width: 40vw;
+            height: 40vh; 
+        }
+        &.disable{
+            animation: disable-mobile .5s ease alternate 1 forwards;
+        }
+    }  
+}

@@ -1,0 +1,65 @@
+.error{
+    position: absolute;
+    top: 70px;
+    width: 400px;
+    right: -500px;
+    display: flex;
+    align-items: center;
+    background-color: #F05F31;
+    border-radius: 8px;
+    padding: 12px;
+    word-wrap: break-word;
+    font-size: 0.7rem;
+    line-height: 1rem;
+    font-weight: bold;
+    color: #141720;
+    opacity: 0;
+    transform: scale(1);
+    z-index: 101;
+    box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.61);
+    svg{
+        margin-right: 9px;
+        height: 14px;
+    }
+    &-active {
+        animation: error 3s ease-in-out alternate 1 forwards;
+    }
+    &.success {
+        background: #46BE60;
+    }
+}
+
+@keyframes error {
+    0% {
+        right: -500px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    10% {
+        right: 10px;
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+    90% {
+        right: 10px;
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+    98% {
+        opacity: 0;
+    }
+    100% {
+        right: -500px;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@media screen and(max-width: 1024px) {
+    .error{
+        max-width: 380px;
+        width: calc(100vw - 20px);
+    }
+}

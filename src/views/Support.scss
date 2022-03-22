@@ -1,0 +1,218 @@
+.support{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &-header{
+        color: #E8E13F;
+        font-size: 1.2rem;
+        line-height: 1.65rem;
+        font-weight: bold;
+        margin-bottom: 24px;
+    }
+    &-body{
+        display: flex;
+        align-items: flex-start;
+        &-content{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .support-item{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                max-height: 47px;
+                min-height: 47px;
+                overflow: hidden;
+                cursor: pointer;
+                transition-duration: 1s;
+                background: #1B1F2A;
+                border-radius: 12px;
+                margin-bottom: 16px;
+                padding-left: 20px;
+                padding-right: 12px;
+                &-header{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    height: 47px;
+                    min-height: 47px;
+                    border-bottom: 1px solid transparent;
+                    span{
+                        color: #FFFFFF;
+                        font-size: 0.7rem;
+                        line-height: 0.8rem;
+                    }
+                    svg{
+                        transition-duration: .2s;
+                    }
+                    .plus{
+                        background: #E8E13F;
+                        border-radius: 7.2px;
+                        width: 24px;
+                        height: 24px;
+                        min-width: 24px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+                &-body{
+                    color: #FFFFFF;
+                    padding-top: 15px;
+                    padding-bottom: 30px;
+                    font-size: 0.7rem;
+                    line-height: 0.9rem;
+                    transition-duration: .4s;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                &.active{
+                    max-height: 500px;
+                    min-height: unset;
+                    overflow: visible;
+                    .support-item-body{
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    .support-item-header{
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                        svg{
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+            }
+        }
+        &-nav{
+            min-width: 216px;
+            width: 216px;
+            padding: 16px 17px 22px 17px;
+            background: #1B1F2A;
+            border-radius: 12px;
+            margin-left: 30px;
+            a{
+                color: #E8E13F;
+                font-size: 0.7rem;
+                line-height: 1rem;
+                margin-bottom: 14px;
+                display: flex;
+                align-items: center;
+                font-weight: normal;
+                svg{
+                    margin-right: 11px;
+                    &:last-child{
+                        path{
+                            stroke: #E8E13F;
+                        }
+                    }
+                }
+            }
+            &-list{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding-bottom: 8px;
+                &-item{
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    justify-content: space-between;
+                    margin-bottom: 16px;
+                    a{
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        justify-content: space-between;
+                        margin-bottom: 0px;
+                        span{
+                            color: rgba(255, 255, 255, 0.6);
+                            font-size: 0.6rem;
+                            line-height: 0.8rem;
+                        }
+                        .count{
+                            background: rgba(255, 255, 255, 0.1);
+                            border-radius: 24px;
+                            padding: 0px 13px;
+                            height: 26px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: #FFFFFF;
+                            font-size: 0.7rem;
+                            line-height: 1rem;
+                            font-weight: bold;
+                            &-active{
+                                background: rgba(232, 225, 63, 0.1);
+                                color: #E8E13F;
+                            }
+                        }
+                    }
+                }
+            }
+            .create-ticket{
+                width: 100%;
+                height: 41px;
+                color: #141720;
+                font-size: 0.7rem;
+                line-height: 1rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .support{
+        &-header{
+            font-size: 0.9rem;
+            line-height: 1.2rem;
+            margin-bottom: 14px;
+        }
+        &-body{
+            flex-direction: column-reverse;
+            &-content{
+                .support-item{
+                    min-height: 47px;
+                    max-height: unset;
+                    margin-bottom: 12px;
+                    &-header{
+                        min-height: 47px;
+                        height: auto;
+                        span{
+                            padding-top: 15px;
+                            padding-bottom: 15px;
+                        }
+                        .plus{
+                            margin-left: 10px;
+                        }
+                    }
+                    &-body{
+                        max-height: 0px;
+                        padding-top: 0px;
+                        padding-bottom: 0px;
+                    }
+                    &.active{
+                        max-height: 500px;
+                        min-height: unset;
+                        overflow: visible;
+                        .support-item-body{
+                            max-height: unset;
+                            opacity: 1;
+                            visibility: visible;
+                            padding-top: 15px;
+                            padding-bottom: 20px;
+                        }
+                    }
+                }
+            }
+            &-nav{
+                width: 100%;
+                padding: 16px 14px 22px 14px;
+                margin-left: 0px;
+                margin-bottom: 12px;
+            }
+        }
+    }
+}

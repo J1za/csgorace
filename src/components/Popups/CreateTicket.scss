@@ -1,0 +1,82 @@
+.ticket-create{
+    width: 544px;
+    padding: 30px 25px 25px;
+    background: #1B1F2A;
+    &-form {
+        display: flex;
+        flex-direction: column;
+    }
+    &-header{
+        color: #E8E13F;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 3px;
+    }
+    &-title{
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.6rem;
+        line-height: 0.8rem;
+        margin-bottom: 16px;
+    }
+    .select{
+        height: 57px;
+        &-active{
+            display: grid;
+            grid-template-rows: 16px 16px;
+            grid-template-columns: 90% 1fr;
+            height: 57px;
+            padding-top: 11px;
+            .title{
+                grid-column-start: 1;
+                grid-row-start: 1;
+    
+            }
+            span{
+                grid-column-start: 1;
+                grid-row-start: 2;
+            }
+            svg{
+                margin-left: 20px;
+                transform: translateY(10px);
+            }
+        }
+        &-list{
+            top: 57px;
+        }
+    }
+    textarea {
+        width: 100%;
+        height: 150px;
+        border: 1px solid #2A2E3D;
+        border-radius: 8px;
+        padding: 12px;
+        color: #FFFFFF;
+        font-size: 0.6rem;
+        line-height: 0.8rem;
+        font-weight: bold;
+        margin-bottom: 16px;
+        margin-top: 0px;
+        &::placeholder{
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+    &-submit{
+        width: 100%;
+        height: 44px;
+        align-self: flex-end;
+        color: #141720;
+        font-size: 0.7rem;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .ticket-create{
+        padding: 20px;
+        width: 100%;
+        textarea {
+            height: 250px;
+        }
+    }
+}

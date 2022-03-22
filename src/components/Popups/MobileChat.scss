@@ -1,0 +1,141 @@
+.mobile-chat{
+    width: calc(100% - 28px);
+    // height: 100%;
+    padding-top: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    background: #1B1F2A;
+    border-radius: 8px;
+    padding-top: 20px;
+    box-shadow: unset;
+    display: flex;
+    flex-direction: column;
+    &-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        .texts{
+            display: flex;
+            align-items: center;
+            .chat-title{
+                display: flex;
+                align-items: center;
+                white-space: nowrap;
+                margin-right: 10px;
+                span{
+                    color: #E8E13F;
+                    font-size: 0.7rem;
+                    line-height: 0.95rem;
+                    margin-left: 13px;
+                }
+            }
+            .chat-rules{
+                display: flex;
+                align-items: center;
+                white-space: nowrap;
+                button{
+                    background: #2A2E3D;
+                    border-radius: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 36px;
+                    height: 36px;
+                    min-width: 36px;
+                    margin-left: 11px;
+                }
+                span{
+                    color: rgba(255, 255, 255, 0.6);
+                    font-size: 0.6rem;
+                    line-height: 0.8rem;
+                    padding-left: 10px;
+                    height: 20px;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    border-left: 1px solid rgba(255, 255, 255, 0.2);
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .online{
+            display: flex;
+            align-items: center;
+            width: auto;
+            padding-left: 8px;
+            padding-right: 15px;
+            margin-left: 14px;
+            height: 28px;
+            background: #46BE60;
+            border-radius: 4px;
+            padding-left: 8px;
+            transition-duration: .2s;
+            svg{
+                margin-right: 10px;
+            }
+            .count{
+                color: #141720;
+                font-size: 0.7rem;
+                line-height: 1rem;
+                font-weight: bold;
+            }
+            span{
+                color: #141720;
+                font-size: 0.5rem;
+                line-height: 0.7rem;
+                margin-left: 6px;
+            }
+        }
+    }
+    &-messages{
+        height: 100%;
+        min-height: calc(calc(var(--vh, 1vh) * 100) - 350px);
+        height: calc(calc(var(--vh, 1vh) * 100) - 350px);
+        overflow-y: auto;
+        overflow-x: hidden;
+        // scroll-behavior: smooth;
+        margin-top: 0px;
+        transition-duration: .2s;
+        transition-duration: .2s;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        // margin-right: 4px;
+        &-list{
+            width: 100%;
+            min-height: 100%;
+            // min-width: 399px;
+            // max-width: 399px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+    }
+    &-send{
+        display: flex;
+        align-items: center;
+        background: #141720;
+        border-radius: 12px;
+        width: 100%;
+        height: 52px;
+        padding-right: 18px;
+        margin-top: 13px;
+        transition-duration: .2s;
+        input{
+            width: 100%;
+            height: 100%;
+            padding: 0px 20px;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.6rem;
+            line-height: 0.8rem;
+        }
+        button{
+            display: flex;
+            align-items: center;
+        }
+    }
+}

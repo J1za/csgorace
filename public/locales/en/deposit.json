@@ -1,0 +1,20 @@
+{
+    "select" : "Select a payment method",
+    "disclaimer" : "Please note that purchased coins cannot be sold or exchanged for real money. If you have any problems during the deposit - our technical support will gladly help you.",
+    "alternative" : "Alternative payment method:",
+    "crypto" : "Crypto",
+    "skinsback" : "Skinsback",
+    "skins" : "skins",
+    "banks" : "Banks",
+    "minSum" : "Min amount",
+    "enterSumm" : "Enter amount",
+    "promo" : "Referral code",
+    "pay" : "Pay",
+    "success" : "Deposit successfull",
+    "backToGames" : "Можете пользоваться Вашими средствами",
+    "something" : "Something happened",
+    "happened" : "Something happened while we were processing you deposit. Please try again or contact support if this mistake repeats",
+    "support" : "Support",
+    "games" : "Games",
+    "deposit" : "Deposit"
+}

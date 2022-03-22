@@ -1,0 +1,8 @@
+{
+    "enterReason" : "Enter Reason",
+    "incorectNumber" : "Your message is too small",
+    "incorrectX" : "Enter correct X",
+    "trade" : "Trade URL has been changed",
+    "key" : "Apikey has been changed",
+    "select" : "You don't have enough funds to withdraw this item"
+}

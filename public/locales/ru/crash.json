@@ -1,0 +1,33 @@
+{
+    "crash": "Crash",
+    "bankroll" : "Сумма",
+    "recent" : "Прошлые результаты",
+    "betAmount" : "Cтавка",
+    "autoCash" : "Автоматический вывод средств",
+    "placeBet" : "Сделать ставку",
+    "cashOut" : "Вывод",
+    "earnings" : "Прибыль",
+    "next" : "следующий раунд",
+    "hash" : "Хэш",
+    "latency": "Задержка",
+    "round" : "Раунд",
+    "datetime" : "Дата",
+    "hour" : "Час",
+    "crashPoint" : "Точка краша",
+    "roundHash" : "Хэш раунда",
+    "saltedHash" : "Секретный Хэш",
+    "maxBet" : "Макс. ставка",
+    "maxWin" : "Макс. выигрыш",
+    "totalPlayers" : "Всего игроков",
+    "player" : "Игрок",
+    "cashedOut" : "X",
+    "color" : "Цвет",
+    "car" : "Машина",
+    "winner" : "Победитель",
+    "table" : {
+        "player" : "Игрок",
+        "cashedOut" : "Выведено",
+        "bet" : "Ставка",
+        "earnings" : "Прибыль"
+    }
+}

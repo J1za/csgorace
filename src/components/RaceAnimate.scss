@@ -1,0 +1,146 @@
+.race-track{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    transition-duration: 1s;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    max-height: 0px;
+    svg{
+        width: 100%;
+        height: auto;
+    }
+    #green-car{
+        width: 100px;
+        height: 100px;
+        background-color: green;
+    }
+    #blue-car{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    }
+    &.open{
+        max-height: 2000px;
+    }
+    &-header{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        .header-racer{
+            display: flex;
+            flex-direction: column;
+            width: 204px;
+            // height: 85px;
+            padding: 15px;
+            background: rgba(34, 37, 45, 0.95);
+            box-shadow: 0px 0px 30px rgba(46, 48, 56, 0.5);
+            border-radius: 12px;
+            &-header{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 13px;
+                span{
+                    color: rgba(#FFFFFF, .5);
+                    font-size: 0.6rem;
+                    line-height: 0.75rem;
+                    font-weight: bold;
+                }
+                .bet{
+                    display: flex;
+                    align-items: center;
+                    svg{
+                        margin-right: 6px;
+                    }
+                    span{
+                        color: #FFFFFF;
+                        font-size: 0.6rem;
+                        line-height: 0.75rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+            &-body{
+                display: flex;
+                align-items: center;
+                img{
+                   width: 30px;
+                   height: 30px; 
+                   border-radius: 8px;
+                   margin-right: 5px;
+                }
+                span{
+                    height: 30px;
+                    // width: 100%;
+                    border-radius: 8px;
+                    // display: flex;
+                    // align-items: center;
+                    // justify-content: center;
+                    color: #FFFFFF;
+                    font-size: 0.65rem;
+                    line-height: 0.9rem;
+                    font-weight: bold;
+                    padding: 0px 16px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    text-align: center;
+                    width: 100%;
+                    padding-top: 6px;
+                }
+            }
+            &.blue{
+                border: 1.5px solid #4B68FF;
+                .header-racer-body{
+                    span{
+                        background: #4B68FF;
+                    }
+                }
+            }
+            &.red{
+                border: 1.5px solid #E8533F;
+                .header-racer-body{
+                    span{
+                        background: #E8533F;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .race-track{
+        overflow: visible;
+        svg{
+            border-radius: 16px;
+        }
+        &-header{
+            position: absolute;
+            top: -110px;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            .header-racer{
+                width: calc(50% - 6px)
+                
+            }
+        }
+        &.open{
+            margin-top: 120px;
+        }
+    }
+}

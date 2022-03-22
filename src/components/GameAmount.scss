@@ -1,0 +1,249 @@
+.game-amount{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 30px;
+    position: relative;
+    .rates{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        &-header{
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.6rem;
+            line-height: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        &-body{
+            display: flex;
+            align-items: center;
+            &-list{
+                display: flex;
+                align-items: center;
+                margin-left: 9px;
+                li{
+                    height: 35px;
+                    padding: 0px 16px;
+                    border: 1px solid #2A2E3D;
+                    background: #1B1F2A;
+                    border-radius: 8px;
+                    color: #FFFFFF;
+                    font-size: 0.7rem;
+                    line-height: 1rem;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    transition-duration: .2s;
+                    &:not(:last-child){
+                        margin-right: 5px;
+                    }
+                    &:hover{
+                        background: rgba(75, 104, 255, 0.1);
+                        border: 1px solid #4B68FF;
+                    }
+                }
+            }
+            &-clear{
+                border: 1px solid rgba(240, 95, 49, 0.2);
+                border-radius: 20px;
+                padding: 0px 23px;
+                height: 27px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #F05F31;
+                font-size: 0.6rem;
+                line-height: 0.8rem;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }
+    .amount{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1;
+        margin-right: 0px;
+        &-header{
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.6rem;
+            line-height: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        &-value{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 35px;
+            background: #1B1F2A;
+            border: 1px solid #2A2E3D;
+            border-radius: 8px;
+            padding: 0px 16px;
+            margin-bottom: 11px;
+            padding-right: 4px;
+            svg{
+                min-width: 18px;
+            }
+            input{
+                width: 100%;
+                padding-left: 16px;
+                height: 100%;
+                color: #FFFFFF;
+                font-size: 0.7rem;
+                line-height: 1rem;
+                font-weight: bold;
+            }
+            &-clear{
+                border: 1px solid transparent;
+                border-radius: 20px;
+                padding: 0px 23px;
+                height: 27px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #F05F31;
+                font-size: 0.6rem;
+                line-height: 0.8rem;
+                font-weight: bold;
+                cursor: pointer;
+                transition-duration: .2s;
+                &:hover{
+                    border: 1px solid rgba(240, 95, 49, 0.2);
+                }
+            }
+        }
+        &-values{
+            display: flex;
+            align-items: center;
+            align-self: flex-start;
+            span{
+                color: rgba(255, 255, 255, 0.6);
+                font-size: 0.6rem;
+                line-height: 0.8rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                &:first-child{
+                    margin-right: 10px;
+                }
+                span{
+                    color: #FFFFFF;
+                    font-size: 0.7rem;
+                    line-height: 1rem;
+                    font-weight: bold;
+                    margin-left: 7px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .game-amount{
+        flex-direction: column;
+        .rates{
+            width: 100%;
+            &-body{
+                width: 100%;
+                &-list{
+                    width: 100%;
+                    margin-right: 0px;
+                    margin-left: 0px;
+                    li{
+                        flex: 1;
+                    }
+                }
+            }
+        }
+        .amount{
+            width: 100%;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            &-value{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .game-amount{
+        flex-direction: column;
+        margin-top: 30px;
+        background: #1B1F2A;
+        padding: 0px 14px;
+        padding-top: 14px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        &.radius{
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+        .rates{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: relative;
+            width: 100%;
+            margin-bottom: 12px;
+            order: 1;
+            &-header{
+                font-size: 0.6rem;
+                line-height: 0.7rem;
+                margin-bottom: 12px;
+            }
+            &-body{
+                width: 100%;
+                &-list{
+                    margin-right: 0px;
+                    margin-left: 0px;
+                    width: 100%;
+                    justify-content: space-between;
+                    li{
+                        flex: 1;
+                        height: 32px;
+                        padding: 0px 6px;
+                        font-size: 0.6rem;
+                        line-height: 0.8rem;
+                        margin-right: 7px;
+                        &:last-child{
+                            margin-right: 0px;
+                        }
+                    }
+                }
+                &-clear{
+                    position: absolute;
+                    top: -4px;
+                    right: 0px;
+                    padding: 0px 13px;
+                    height: 22px;
+                    font-size: 0.5rem;
+                    line-height: 0.7rem;
+                }
+            }
+        }
+        .amount{
+            width: 100%;
+            align-items: flex-start;
+            margin-bottom: 27px;
+            order: 2;
+            &-header{
+                font-size: 0.5rem;
+                line-height: 0.7rem;
+                margin-bottom: 8px;
+            }
+            &-value{
+                width: 100%;
+                height: 40px;
+                margin-bottom: 0px;
+            }
+            &-values{
+                display: none;
+            }
+        }
+    }
+}

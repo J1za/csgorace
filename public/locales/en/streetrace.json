@@ -1,0 +1,14 @@
+{
+    "streetrace" : "Streetrace",
+    "recent" : "RECENT HISTORY",
+    "betAmount" : "Bet amount",
+    "amount" : "Amount",
+    "placeBet" : "Place bet",
+    "last" : "LAST",
+    "bankroll" : "bankroll",
+    "maxBet" : "Max bet amount",
+    "maxWin" : "Max win",
+    "info" : {
+        "p1" : "In this game mode, you have 4 cars that are racing towards the finish. The car which finishes first is the winner. You need to choose a car or several ones and if one of them wins, you will receive a major prize (x3.75 to your bet amount)"
+    }
+}

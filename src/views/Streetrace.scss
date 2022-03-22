@@ -1,0 +1,163 @@
+.streetrace{
+    display: flex;
+    flex-direction: column;
+    &-stat{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 18px;
+        &-history{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            span{
+                color: rgba(255, 255, 255, 0.6);
+                font-size: 0.6rem;
+                line-height: 0.8rem;
+                font-weight: bold;
+                margin-bottom: 8px;
+            }
+            .history{
+                display: flex;
+                align-items: center;
+                li{
+                    border-radius: 5px;
+                    height: 16px;
+                    width: 16px;
+                    cursor: pointer;
+                    margin-right: 6px;
+                    &.green{
+                        background: #46BE60;
+                    }
+                    &.red{
+                        background: #F05F31;
+                    }
+                    &.blue{
+                        background: #4B68FF;
+                    }
+                    &.yellow{
+                        background: #FFC700;
+                    }
+                }
+            }
+        }
+        &-last{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            span{
+                color: rgba(255, 255, 255, 0.6);
+                font-size: 0.6rem;
+                line-height: 0.8rem;
+                font-weight: bold;
+                margin-bottom: 8px;
+            }
+            .values{
+                display: flex;
+                align-items: center;
+                &-item{
+                    display: flex;
+                    align-items: center;
+                    margin-left: 16px;
+                    span{
+                        margin-bottom: 0px;
+                    }
+                    .color{
+                        border-radius: 5px;
+                        height: 16px;
+                        width: 16px;
+                        margin-right: 6px;
+                        &.green{
+                            background: #46BE60;
+                        }
+                        &.red{
+                            background: #F05F31;
+                        }
+                        &.blue{
+                            background: #4B68FF;
+                        }
+                        &.yellow{
+                            background: #FFC700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-bets{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 1020px;
+        margin: 0 auto;
+        margin-top: 45px;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .streetrace{
+        &-bets{
+            width: 700px;
+        }
+    }
+}
+
+@media screen and (min-width: 2600px) {
+    .streetrace{
+        &-bets{
+            width: 1700px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .streetrace{
+        &-stat{
+            padding-top: 12px;
+            margin-bottom: 60px;
+            &-history{
+                span{
+                    font-size: 0.5rem;
+                    line-height: 0.7rem;
+                }
+                .history{
+                    li{
+                        height: 12px;
+                        width: 12px;
+                    }
+                }
+            }
+            &-last{
+                span{
+                    font-size: 0.5rem;
+                    line-height: 0.7rem;
+                }
+                .values{
+                    display: flex;
+                    align-items: center;
+                    &-item{
+                        margin-left: 8px;
+                        .color{
+                            height: 12px;
+                            width: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        &-bets{
+            background: #1B1F2A;
+            padding: 0px 14px;
+            padding-bottom: 10px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 0;
+            margin-top: 0px;
+            margin-bottom: 20px;
+        }
+    }
+}

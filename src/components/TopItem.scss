@@ -1,0 +1,403 @@
+.top-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+    &-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 12px;
+        background: #FFC700;
+        width: 100%;
+        height: 240px;
+        position: relative;
+        .cup{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+        .image{
+            border: 5px solid rgba(255, 255, 255, 0.2);
+            border-radius: 27.5px;
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            margin-top: -50px;
+            margin-bottom: 18px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &.grey{
+                border-color: #A3A5B7;
+            }
+            &.blue{
+                border-color: #93C7F4;
+            }
+            &.yellow{
+                border-color: #E8E13F;
+            }
+            &.orange{
+                border-color: #E8903F;
+            }
+            &.violet{
+                border-color: #BC93FE;
+            }
+            &.red{
+                border-color: #E8533F;
+            }
+            &.fire{
+                border-color: #FD6228;
+            }
+            .level{
+                width: 32px;
+                height: 32px;
+                font-size: 0.7rem;
+                line-height: 0.95rem;
+                bottom: -16px;
+            }
+            img{
+                width: 100%;
+                border-radius: 20px;
+                &.streamer{
+                    filter: blur(5px);
+                }
+            }
+        }
+        .name{
+            color: #141720;
+            font-size: 0.7rem;
+            line-height: 1rem;
+            font-weight: bold;
+            z-index: 1;
+            text-align: center;
+        }
+        .fuel{
+            display: flex;
+            align-items: center;
+            margin-bottom: 6px;
+            z-index: 1;
+            svg{
+                margin-right: 8px;
+            }
+            color: #141720;
+            font-size: 0.7rem;
+            line-height: 1rem;
+            font-weight: bold;
+        }
+        .won{
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            padding-right: 8px;
+            background: #FFFFFF;
+            border-radius: 42px;
+            height: 28px;
+            z-index: 1;
+            svg{
+                margin-right: 8px;
+            }
+            color: #46BE60;
+            font-size: 0.7rem;
+            line-height: 1rem;
+            font-weight: bold;
+            &.hide{
+                opacity: 0;
+            }
+        }
+    }
+    &-count{
+        color: rgba(255, 255, 255, 0.4);
+        font-size: 1.2rem;
+        line-height: 1.55rem;
+        margin-top: 9px;
+        font-weight: bold;
+        &.gold{
+            color: #E8E13F;
+        }
+    }
+    &.third{
+        .top-item{
+            &-body{
+                background: #46BE60;
+                height: 150px;
+                .image{
+                    border-radius: 20px;
+                    width: 76px;
+                    height: 76px;
+                    padding: 4px;
+                    margin-top: -38px;
+                    margin-bottom: 16px;
+                    .level{
+                        width: 24px;
+                        height: 24px;
+                        font-size: 0.5rem;
+                        line-height: 0.75rem;
+                        bottom: -12px;
+                    }
+                    img{
+                        width: 100%;
+                        border-radius: 14px;
+                    }
+                }
+                .name{
+                    color: #fff;
+                }
+                .fuel{
+                    color: #fff;
+                }
+                .won{
+                    color: #FFC700;
+                }
+            }
+            &-count{
+                color: #46BE60;
+            }
+        }
+    }
+    &.second{
+        .top-item{
+            &-body{
+                background: #4B68FF;
+                height: 204px;
+                .image{
+                    border-radius: 20px;
+                    width: 76px;
+                    height: 76px;
+                    padding: 4px;
+                    margin-top: -38px;
+                    margin-bottom: 16px;
+                    .level{
+                        width: 24px;
+                        height: 24px;
+                        font-size: 0.5rem;
+                        line-height: 0.75rem;
+                        bottom: -12px;
+                    }
+                    img{
+                        width: 100%;
+                        border-radius: 14px;
+                    }
+                }
+                .name{
+                    color: #fff;
+                }
+                .fuel{
+                    color: #fff;
+                }
+                .won{
+                    color: #4B68FF;
+                }
+            }
+            &-count{
+                color: #4B68FF;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .top-item{
+        flex-direction: row-reverse;
+        width: 100%;
+        margin-bottom: 12px;
+        padding: 0px 10px;
+        &-body{
+            background: #FFC700;
+            height: 116px;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 93px;
+            .cup{
+                width: 100px;
+            }
+            .image{
+                border: 3px solid rgba(255, 255, 255, 0.2);
+                border-radius: 16px;
+                width: 62px;
+                height: 62px;
+                padding: 2px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                position: absolute;
+                left: 18px;
+                top: calc(50% - 31px);
+                &.grey{
+                    border-color: #A3A5B7;
+                }
+                &.blue{
+                    border-color: #93C7F4;
+                }
+                &.yellow{
+                    border-color: #E8E13F;
+                }
+                &.orange{
+                    border-color: #E8903F;
+                }
+                &.violet{
+                    border-color: #BC93FE;
+                }
+                &.red{
+                    border-color: #E8533F;
+                }
+                &.fire{
+                    border-color: #FD6228;
+                }
+                .level{
+                    width: 20px;
+                    height: 20px;
+                    font-size: 0.4rem;
+                    line-height: 0.6rem;
+                    bottom: -10px;
+                }
+                img{
+                    border-radius: 12px;
+                }
+            }
+            .name{
+                margin-bottom: 7px;
+            }
+        }
+        &-count{
+            margin-top: 0px;
+            width: 33px;
+            white-space: nowrap;
+            transform: rotate(-90deg);
+            margin-right: 19px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &.gold{
+                color: #E8E13F;
+            }
+        }
+        &.third{
+            order: 3;
+            .top-item{
+                &-body{
+                    background: #46BE60;
+                    height: 116px;
+                    .cup{
+                        width: 60px;
+                    }
+                    .image{
+                        border: 3px solid rgba(255, 255, 255, 0.2);
+                        border-radius: 16px;
+                        width: 62px;
+                        height: 62px;
+                        padding: 2px;
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                        position: absolute;
+                        left: 18px;
+                        &.grey{
+                            border-color: #A3A5B7;
+                        }
+                        &.blue{
+                            border-color: #93C7F4;
+                        }
+                        &.yellow{
+                            border-color: #E8E13F;
+                        }
+                        &.orange{
+                            border-color: #E8903F;
+                        }
+                        &.violet{
+                            border-color: #BC93FE;
+                        }
+                        &.red{
+                            border-color: #E8533F;
+                        }
+                        &.fire{
+                            border-color: #FD6228;
+                        }
+                        .level{
+                            width: 20px;
+                            height: 20px;
+                            font-size: 0.4rem;
+                            line-height: 0.6rem;
+                            bottom: -10px;
+                        }
+                        img{
+                            border-radius: 12px;
+                        }
+                    }
+                    .name{
+                        color: #fff;
+                    }
+                    .fuel{
+                        color: #fff;
+                    }
+                    .won{
+                        color: #FFC700;
+                    }
+                }
+            }
+        }
+        &.second{
+            order: 2;
+            .top-item{
+                &-body{
+                    background: #4B68FF;
+                    height: 116px;
+                    .cup{
+                        width: 90px;
+                    }
+                    .image{
+                        border: 3px solid rgba(255, 255, 255, 0.2);
+                        border-radius: 16px;
+                        width: 62px;
+                        height: 62px;
+                        padding: 2px;
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                        position: absolute;
+                        left: 18px;
+                        &.grey{
+                            border-color: #A3A5B7;
+                        }
+                        &.blue{
+                            border-color: #93C7F4;
+                        }
+                        &.yellow{
+                            border-color: #E8E13F;
+                        }
+                        &.orange{
+                            border-color: #E8903F;
+                        }
+                        &.violet{
+                            border-color: #BC93FE;
+                        }
+                        &.red{
+                            border-color: #E8533F;
+                        }
+                        &.fire{
+                            border-color: #FD6228;
+                        }
+                        .level{
+                            width: 20px;
+                            height: 20px;
+                            font-size: 0.4rem;
+                            line-height: 0.6rem;
+                            bottom: -10px;
+                        }
+                        img{
+                            border-radius: 12px;
+                        }
+                    }
+                    .name{
+                        color: #fff;
+                    }
+                    .fuel{
+                        color: #fff;
+                    }
+                    .won{
+                        color: #4B68FF;
+                    }
+                }
+            }
+        }
+    }
+}

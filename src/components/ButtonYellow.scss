@@ -1,0 +1,19 @@
+.yellow-button{
+    height: 33px;
+    padding: 0px 24px;
+    background: #E8E13F;
+    border-radius: 8px;
+    color: #141720;
+    font-size: 0.5rem;
+    line-height: 0.7rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:disabled{
+        cursor: default;
+        color: #141720;
+        background-color: rgb(126, 122, 122);
+        box-shadow: unset;
+    }
+}

@@ -1,0 +1,118 @@
+
+.tos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 20px;  
+    &-header{
+        color: #E8E13F;
+        font-size: 1.2rem;
+        line-height: 1.15rem;
+        font-weight: 600;
+        margin-bottom: 5.5px;
+    }
+    &-updated{
+        color: rgba(#C0C6D8, .5);
+        margin-bottom: -5px;
+        font-size: 0.7rem;
+    }
+    &-body{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 0 auto;
+        &-header{
+            font-size: 0.9rem;
+            line-height: 155%;
+            margin-bottom: 18px;
+            font-weight: 500;
+            color: #C0C6D8;
+            margin-top: 25px;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        &-point{
+            width: 99%;
+            font-size: 0.7rem;
+            line-height: 155%;
+            color: #C0C6D8;
+            padding-left: 60px;
+            position: relative;
+            margin-bottom: 10px;
+            a{
+                color: #00f0ff;
+                text-decoration: underline;
+            }
+            span{
+                position: absolute;
+                left: 30px;
+            }
+            &-list{
+                // padding-left: 20px;
+                margin-top: 6px;
+                list-style: disc;
+                li{
+                    font-size: 0.7rem;
+                    line-height: 155%;
+                    margin-bottom: 10px;
+                    // margin-top: 4px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .tos {
+        &-header{
+            font-size: 0.9rem;
+            line-height: 1rem;
+            margin-bottom: 20px;
+        }
+        &-body{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin: 0 auto;
+            &-header{
+                font-size: 1rem;
+                line-height: 1.2rem;
+                margin-bottom: 18px;
+                font-weight: 800;
+                color: #fff;
+                margin-top: 10px;
+                width: 100%;
+            }
+            &-point{
+                width: 99%;
+                font-size: 0.7rem;
+                line-height: 0.9rem;
+                color: #fff;
+                padding-left: 40px;
+                position: relative;
+                margin-bottom: 4px;
+                margin-top: 4px;
+                a{
+                    color: #00f0ff;
+                    text-decoration: underline;
+                }
+                span{
+                    position: absolute;
+                    left: 0px;
+                }
+                &-list{
+                    // padding-left: 20px;
+                    list-style: disc;
+                    li{
+                        font-size: 0.7rem;
+                        line-height: 0.9rem;
+                        margin-bottom: 4px;
+                        margin-top: 4px;
+                    }
+                }
+            }
+        }
+    }
+}

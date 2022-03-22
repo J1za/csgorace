@@ -1,0 +1,145 @@
+.mobile-menu{
+    width: calc(100% - 28px);
+    // height: 100%;
+    padding-top: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+    background: #1B1F2A;
+    box-shadow: unset;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    &-menu{
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        &-list{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            &-item{
+                width: 100%;
+                height: 43px;
+                display: flex;
+                align-items: center;
+                a{
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    width: 100%;
+                    span{
+                        margin-left: 16px;
+                        color: rgba(255, 255, 255, 0.2);
+                        font-size: 0.8rem;
+                        line-height: 1.1rem;
+                        transition-duration: .2s;
+                    }
+                    svg{
+                        path{
+                            transition-duration: .2s;
+                        }
+                    }
+                }
+                &.active{
+                    a{
+                        span{
+                            color: #E8E13F;
+                        }
+                        svg{
+                            path{
+                                fill: #E8E13F;
+                                fill-opacity: 1;
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    a{
+                        span{
+                            color: #E8E13F;
+                        }
+                        svg{
+                            path{
+                                fill: #E8E13F;
+                                fill-opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-links{
+        // height: 65px;
+        display: flex;
+        padding: 16px 0px;
+        margin-top: 20px;
+        justify-content: space-between;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        &-item{
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.7rem;
+            line-height: 1rem;
+            margin-bottom: 0px;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span{
+                text-align: center;
+            }
+            // width: 25%;
+            // white-space: nowrap;
+            &:last-child{
+                width: 50px;
+                max-width: 50px;
+                padding-left: 10px;
+            }
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    &-social{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        .links{
+            display: flex;
+            align-items: center;
+        }
+        &-item{
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 8px;
+            background: #2A2E3D;
+            border-radius: 12px;
+        }
+        .lang{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span{
+                color: rgba(255, 255, 255, 0.4);
+                font-size: 0.8rem;
+                line-height: 1.1rem;
+                font-weight: bold;
+                margin-right: 12px;
+                &.active{
+                    color: #4B68FF;
+                }
+            }
+        }
+    }
+}

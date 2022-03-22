@@ -1,0 +1,2310 @@
+.streetrace-track{
+    width: 100%;
+    height: 390px;
+    background-color: rgba(#fff, .05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-top: 12px;
+    .track-wrapper{
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 100%;
+        .track{
+            width: 105%;
+            position: absolute;
+            bottom: calc(-6vw + 50px );
+            &.animate{
+                animation: 6.5s linear forwards track;
+            }
+            &.track-reset{
+                animation: 1s linear forwards track-reset;
+            }
+        }
+    }
+    .cars{
+        position: absolute;
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        bottom: calc(-1vw - 200px);
+        svg{
+            width: calc(9vw - 80px);
+            margin-right: 1.7vw;
+            transform: translateX(0.5vw);
+            height: 100%;
+            &:nth-child(3){
+                width: calc(9.8vw - 80px);
+                margin-right: 0.9vw;
+            }
+            &.case0{
+                transform: translateX(0.5vw) translateY(200px);
+            }
+
+
+
+            &.race001{
+                animation: race001 8s linear forwards;
+            }
+            &.race101{
+                animation: race101 8s linear forwards;
+            }
+            &.race201{
+                animation: race201 8s linear forwards;
+            }
+            &.race301{
+                animation: race301 8s linear forwards;
+            }
+
+            &.race011{
+                animation: race011 8s linear forwards;
+            }
+            &.race111{
+                animation: race111 8s linear forwards;
+            }
+            &.race211{
+                animation: race211 8s linear forwards;
+            }
+            &.race311{
+                animation: race311 8s linear forwards;
+            }
+
+            &.race021{
+                animation: race021 8s linear forwards;
+            }
+            &.race121{
+                animation: race121 8s linear forwards;
+            }
+            &.race221{
+                animation: race221 8s linear forwards;
+            }
+            &.race321{
+                animation: race321 8s linear forwards;
+            }
+
+            &.race031{
+                animation: race031 8s linear forwards;
+            }
+            &.race131{
+                animation: race131 8s linear forwards;
+            }
+            &.race231{
+                animation: race231 8s linear forwards;
+            }
+            &.race331{
+                animation: race331 8s linear forwards;
+            }
+
+
+
+
+            &.race002{
+                animation: race002 8s linear forwards;
+            }
+            &.race102{
+                animation: race102 8s linear forwards;
+            }
+            &.race202{
+                animation: race202 8s linear forwards;
+            }
+            &.race302{
+                animation: race302 8s linear forwards;
+            }
+
+            &.race012{
+                animation: race012 8s linear forwards;
+            }
+            &.race112{
+                animation: race112 8s linear forwards;
+            }
+            &.race212{
+                animation: race212 8s linear forwards;
+            }
+            &.race312{
+                animation: race312 8s linear forwards;
+            }
+
+            &.race022{
+                animation: race022 8s linear forwards;
+            }
+            &.race122{
+                animation: race122 8s linear forwards;
+            }
+            &.race222{
+                animation: race222 8s linear forwards;
+            }
+            &.race322{
+                animation: race322 8s linear forwards;
+            }
+
+            &.race032{
+                animation: race032 8s linear forwards;
+            }
+            &.race132{
+                animation: race132 8s linear forwards;
+            }
+            &.race232{
+                animation: race232 8s linear forwards;
+            }
+            &.race332{
+                animation: race332 8s linear forwards;
+            }
+
+
+
+            &.race003{
+                animation: race003 8s linear forwards;
+            }
+            &.race103{
+                animation: race103 8s linear forwards;
+            }
+            &.race203{
+                animation: race203 8s linear forwards;
+            }
+            &.race303{
+                animation: race303 8s linear forwards;
+            }
+
+            &.race013{
+                animation: race013 8s linear forwards;
+            }
+            &.race113{
+                animation: race113 8s linear forwards;
+            }
+            &.race213{
+                animation: race213 8s linear forwards;
+            }
+            &.race313{
+                animation: race313 8s linear forwards;
+            }
+
+            &.race023{
+                animation: race023 8s linear forwards;
+            }
+            &.race123{
+                animation: race123 8s linear forwards;
+            }
+            &.race223{
+                animation: race223 8s linear forwards;
+            }
+            &.race323{
+                animation: race323 8s linear forwards;
+            }
+
+            &.race033{
+                animation: race033 8s linear forwards;
+            }
+            &.race133{
+                animation: race133 8s linear forwards;
+            }
+            &.race233{
+                animation: race233 8s linear forwards;
+            }
+            &.race333{
+                animation: race333 8s linear forwards;
+            }
+
+
+
+            &.race004{
+                animation: race004 8s linear forwards;
+            }
+            &.race104{
+                animation: race104 8s linear forwards;
+            }
+            &.race204{
+                animation: race204 8s linear forwards;
+            }
+            &.race304{
+                animation: race304 8s linear forwards;
+            }
+
+            &.race014{
+                animation: race014 8s linear forwards;
+            }
+            &.race114{
+                animation: race114 8s linear forwards;
+            }
+            &.race214{
+                animation: race214 8s linear forwards;
+            }
+            &.race314{
+                animation: race314 8s linear forwards;
+            }
+
+            &.race024{
+                animation: race024 8s linear forwards;
+            }
+            &.race124{
+                animation: race124 8s linear forwards;
+            }
+            &.race224{
+                animation: race224 8s linear forwards;
+            }
+            &.race324{
+                animation: race324 8s linear forwards;
+            }
+
+            &.race034{
+                animation: race034 8s linear forwards;
+            }
+            &.race134{
+                animation: race134 8s linear forwards;
+            }
+            &.race234{
+                animation: race234 8s linear forwards;
+            }
+            &.race334{
+                animation: race334 8s linear forwards;
+            }
+
+
+
+
+            &.case1{
+                animation: case1 2s linear forwards;
+            }
+            &.car1{
+                &.animate{
+                    animation: car1 3s linear infinite;
+                }
+            }
+            &.car2{
+                &.animate{
+                    animation: car2 2s linear infinite;
+                }
+            }
+            &.car3{
+                &.animate{
+                    animation: car3 4s linear infinite;
+                }
+            }
+            &.car4{
+                &.animate{
+                    animation: car4 2s linear infinite;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 2500px) {
+    .streetrace-track{
+        height: 500px;
+        .track-wrapper{
+            width: 100%;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            height: 100%;
+        }
+        .cars{
+            bottom: calc(-1vw - 240px);
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1920px) {
+    .streetrace-track{
+        .cars{
+            svg{
+                width: calc(8vw - 80px);
+                margin-right: 1.7vw;
+                transform: translateX(0.5vw);
+                &:nth-child(3){
+                    width: calc(9vw - 80px);
+                    margin-right: 1.2vw;
+                    margin-left: -0.5vw;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 2048px) {
+    .streetrace-track{
+        height: 500px;
+        .cars{
+            bottom: calc(-5vw - 200px);
+            svg{
+                &:nth-child(3){
+                    width: calc(9vw - 80px);
+                    margin-right: 1.2vw;
+                    margin-left: -0.5vw;
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    // .streetrace-track{
+    //     height: 170px;
+    //     .track-wrapper{
+    //         // width: 1300px;
+    //         position: relative;
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: center;
+    //         height: 100%;
+    //         .track{
+    //             bottom: -50%; // 266
+    //         }
+    //     }
+    // }
+    .streetrace-track{
+        height: 170px;
+        .track-wrapper{
+            width: 100%;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            height: 100%;
+            .track{
+                bottom: -10%; // 266
+            }
+        }
+        .cars{
+            bottom: calc(-1vw - 90px);
+            svg{
+                width: calc(10vw - 10px);
+                &:nth-child(3){
+                    width: calc(12vw - 10px);
+                    // margin-right: 1.6vw;
+                }
+                &.race001m{
+                    animation: race001m 8s linear forwards;
+                }
+                &.race101m{
+                    animation: race101m 8s linear forwards;
+                }
+                &.race201m{
+                    animation: race201m 8s linear forwards;
+                }
+                &.race301m{
+                    animation: race301m 8s linear forwards;
+                }
+    
+                &.race011m{
+                    animation: race011m 8s linear forwards;
+                }
+                &.race111m{
+                    animation: race111m 8s linear forwards;
+                }
+                &.race211m{
+                    animation: race211m 8s linear forwards;
+                }
+                &.race311m{
+                    animation: race311m 8s linear forwards;
+                }
+    
+                &.race021m{
+                    animation: race021m 8s linear forwards;
+                }
+                &.race121m{
+                    animation: race121m 8s linear forwards;
+                }
+                &.race221m{
+                    animation: race221m 8s linear forwards;
+                }
+                &.race321m{
+                    animation: race321m 8s linear forwards;
+                }
+    
+                &.race031m{
+                    animation: race031m 8s linear forwards;
+                }
+                &.race131m{
+                    animation: race131m 8s linear forwards;
+                }
+                &.race231m{
+                    animation: race231m 8s linear forwards;
+                }
+                &.race331m{
+                    animation: race331m 8s linear forwards;
+                }
+    
+    
+    
+    
+                &.race002m{
+                    animation: race002m 8s linear forwards;
+                }
+                &.race102m{
+                    animation: race102m 8s linear forwards;
+                }
+                &.race202m{
+                    animation: race202m 8s linear forwards;
+                }
+                &.race302m{
+                    animation: race302m 8s linear forwards;
+                }
+    
+                &.race012m{
+                    animation: race012m 8s linear forwards;
+                }
+                &.race112m{
+                    animation: race112m 8s linear forwards;
+                }
+                &.race212m{
+                    animation: race212m 8s linear forwards;
+                }
+                &.race312m{
+                    animation: race312m 8s linear forwards;
+                }
+    
+                &.race022m{
+                    animation: race022m 8s linear forwards;
+                }
+                &.race122m{
+                    animation: race122m 8s linear forwards;
+                }
+                &.race222m{
+                    animation: race222m 8s linear forwards;
+                }
+                &.race322m{
+                    animation: race322m 8s linear forwards;
+                }
+    
+                &.race032m{
+                    animation: race032m 8s linear forwards;
+                }
+                &.race132m{
+                    animation: race132m 8s linear forwards;
+                }
+                &.race232m{
+                    animation: race232m 8s linear forwards;
+                }
+                &.race332m{
+                    animation: race332m 8s linear forwards;
+                }
+    
+    
+    
+                &.race003m{
+                    animation: race003m 8s linear forwards;
+                }
+                &.race103m{
+                    animation: race103m 8s linear forwards;
+                }
+                &.race203m{
+                    animation: race203m 8s linear forwards;
+                }
+                &.race303m{
+                    animation: race303m 8s linear forwards;
+                }
+    
+                &.race013m{
+                    animation: race013m 8s linear forwards;
+                }
+                &.race113m{
+                    animation: race113m 8s linear forwards;
+                }
+                &.race213m{
+                    animation: race213m 8s linear forwards;
+                }
+                &.race313m{
+                    animation: race313m 8s linear forwards;
+                }
+    
+                &.race023m{
+                    animation: race023m 8s linear forwards;
+                }
+                &.race123m{
+                    animation: race123m 8s linear forwards;
+                }
+                &.race223m{
+                    animation: race223m 8s linear forwards;
+                }
+                &.race323m{
+                    animation: race323m 8s linear forwards;
+                }
+    
+                &.race033m{
+                    animation: race033m 8s linear forwards;
+                }
+                &.race133m{
+                    animation: race133m 8s linear forwards;
+                }
+                &.race233m{
+                    animation: race233m 8s linear forwards;
+                }
+                &.race333m{
+                    animation: race333m 8s linear forwards;
+                }
+    
+    
+    
+                &.race004m{
+                    animation: race004m 8s linear forwards;
+                }
+                &.race104m{
+                    animation: race104m 8s linear forwards;
+                }
+                &.race204m{
+                    animation: race204m 8s linear forwards;
+                }
+                &.race304m{
+                    animation: race304m 8s linear forwards;
+                }
+    
+                &.race014m{
+                    animation: race014m 8s linear forwards;
+                }
+                &.race114m{
+                    animation: race114m 8s linear forwards;
+                }
+                &.race214m{
+                    animation: race214m 8s linear forwards;
+                }
+                &.race314m{
+                    animation: race314m 8s linear forwards;
+                }
+    
+                &.race024m{
+                    animation: race024m 8s linear forwards;
+                }
+                &.race124m{
+                    animation: race124m 8s linear forwards;
+                }
+                &.race224m{
+                    animation: race224m 8s linear forwards;
+                }
+                &.race324m{
+                    animation: race324m 8s linear forwards;
+                }
+    
+                &.race034m{
+                    animation: race034m 8s linear forwards;
+                }
+                &.race134m{
+                    animation: race134m 8s linear forwards;
+                }
+                &.race234m{
+                    animation: race234m 8s linear forwards;
+                }
+                &.race334m{
+                    animation: race334m 8s linear forwards;
+                }
+    
+            }
+        }
+    }
+}
+
+
+
+
+//races
+// case 1
+//races 1 car
+@keyframes race001 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-250px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-100px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-250px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-700px);
+    }
+}
+
+@keyframes race101 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.8vw) translateY(-200px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-250px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-200px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-600px);
+    }
+}
+
+@keyframes race201 {
+     0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-200px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-200px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-250px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race301 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-250px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-150px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-100px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-600px);
+    }
+}
+
+
+//races 2 car
+@keyframes race011 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-200px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-250px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-200px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-600px);
+    }
+}
+
+@keyframes race111 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-250px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-100px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-250px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-700px);
+    }
+}
+
+@keyframes race211 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-200px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-250px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-200px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-600px);
+    }
+}
+
+@keyframes race311 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-200px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-250px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-200px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-600px);
+    }
+}
+
+//races 3 car
+@keyframes race021 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-100px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-150px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-200px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race121 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-100px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-150px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-200px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race221 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-250px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-100px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-250px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-700px);
+    }
+}
+
+@keyframes race321 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-100px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-150px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-200px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+//races 4 car
+@keyframes race031 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-250px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-150px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-100px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-600px);
+    }
+}
+
+@keyframes race131 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-250px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-150px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-100px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-600px);
+    }
+}
+
+@keyframes race231 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-250px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-150px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-100px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-600px);
+    }
+}
+
+@keyframes race331 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-250px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-100px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-250px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-700px);
+    }
+}
+
+
+
+
+// case 2
+//races 1 car
+@keyframes race002 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-100px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-150px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-250px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-700px);
+    }
+}
+
+@keyframes race102 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-200px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-300px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-150px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race202 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-100px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-200px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-100px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-600px);
+    }
+}
+
+@keyframes race302 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-300px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-200px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-100px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-600px);
+    }
+}
+
+
+//races 2 car
+@keyframes race012 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-200px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-300px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-150px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race112 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-50px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-100px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-250px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-700px);
+    }
+}
+
+@keyframes race212 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-200px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-300px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-150px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race312 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-200px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-300px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-150px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+//races 3 car
+@keyframes race022 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-100px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-200px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-100px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-600px);
+    }
+}
+
+@keyframes race122 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-100px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-200px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-100px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-600px);
+    }
+}
+
+@keyframes race222 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-50px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-100px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-250px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-700px);
+    }
+}
+
+@keyframes race322 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-100px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-200px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-100px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-600px);
+    }
+}
+
+//races 4 car
+@keyframes race032 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-300px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-200px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-100px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-600px);
+    }
+}
+
+@keyframes race132 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-300px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-200px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-100px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-600px);
+    }
+}
+
+@keyframes race232 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-300px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-200px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-100px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-600px);
+    }
+}
+
+@keyframes race332 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-50px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-100px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-250px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-700px);
+    }
+}
+
+
+
+
+// case 3
+//races 1 car
+@keyframes race003 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-200px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-150px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-300px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-700px);
+    }
+}
+
+@keyframes race103 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-100px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-200px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-150px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-600px);
+    }
+}
+
+@keyframes race203 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-100px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-200px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-300px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race303 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-200px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-250px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-300px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+
+//races 2 car
+@keyframes race013 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-100px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-200px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-150px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-600px);
+    }
+}
+
+@keyframes race113 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-200px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-150px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-300px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-700px);
+    }
+}
+
+@keyframes race213 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-100px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-200px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-150px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-600px);
+    }
+}
+
+@keyframes race313 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-100px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-200px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-150px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-600px);
+    }
+}
+
+//races 3 car
+@keyframes race023 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-100px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-200px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-300px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race123 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-100px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-200px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-300px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race223 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-200px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-150px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-300px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-700px);
+    }
+}
+
+@keyframes race323 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-100px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-200px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-300px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+//races 4 car
+@keyframes race033 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-200px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-250px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-300px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race133 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-200px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-250px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-300px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race233 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-200px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-250px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-300px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race333 {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-200px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-150px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-300px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-700px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes race001m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.2vw) translateY(-70px);
+    }
+    80%{
+        transform: translateX(0.7vw) translateY(-110px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-700px);
+    }
+}
+
+@keyframes race101m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.2vw) translateY(-30px);
+    }
+    80%{
+        transform: translateX(0.7vw) translateY(-40px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race201m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-150px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-200px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-250px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race301m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.2vw) translateY(-60px);
+    }
+    80%{
+        transform: translateX(0.7vw) translateY(-70px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+
+//races 2 car
+@keyframes race011m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.8vw) translateY(-80px);
+    }
+    80%{
+        transform: translateX(0.4vw) translateY(-100px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race111m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.8vw) translateY(-40px);
+    }
+    80%{
+        transform: translateX(0.4vw) translateY(-130px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-700px);
+    }
+}
+
+@keyframes race211m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.8vw) translateY(-80px);
+    }
+    80%{
+        transform: translateX(0.4vw) translateY(-60px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race311m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.8vw) translateY(-100px);
+    }
+    80%{
+        transform: translateX(0.4vw) translateY(-70px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+//races 3 car
+@keyframes race021m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    25%{
+        transform: translateX(0.4vw) translateY(-200px);
+    }
+    50%{
+        transform: translateX(0.7vw) translateY(-800px);
+    }
+    75%{
+        transform: translateX(0.7vw) translateY(-300px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-600px);
+    }
+}
+
+@keyframes race121m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.4vw) translateY(-40px);
+    }
+    80%{
+        transform: translateX(0.7vw) translateY(-80px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race221m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.4vw) translateY(-90px);
+    }
+    80%{
+        transform: translateX(0.7vw) translateY(-120px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-700px);
+    }
+}
+
+@keyframes race321m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.4vw) translateY(-60px);
+    }
+    80%{
+        transform: translateX(0.7vw) translateY(-80px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+//races 4 car
+@keyframes race031m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.2vw) translateY(-80px);
+    }
+    80%{
+        transform: translateX(0.6vw) translateY(-100px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race131m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.2vw) translateY(-60px);
+    }
+    80%{
+        transform: translateX(0.6vw) translateY(-100px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race231m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.2vw) translateY(-60px);
+    }
+    80%{
+        transform: translateX(0.6vw) translateY(-60px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race331m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.2vw) translateY(-50px);
+    }
+    80%{
+        transform: translateX(0.6vw) translateY(-120px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-700px);
+    }
+}
+
+
+
+
+// case 2
+//races 1 car
+@keyframes race002m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.2vw) translateY(-80px);
+    }
+    80%{
+        transform: translateX(0.7vw) translateY(-120px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-700px);
+    }
+}
+
+@keyframes race102m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.2vw) translateY(-70px);
+    }
+    80%{
+        transform: translateX(0.7vw) translateY(-50px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race202m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.2vw) translateY(-80px);
+    }
+    80%{
+        transform: translateX(0.7vw) translateY(-100px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race302m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.2vw) translateY(-60px);
+    }
+    80%{
+        transform: translateX(0.7vw) translateY(-80px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+
+//races 2 car
+@keyframes race012m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.8vw) translateY(-70px);
+    }
+    80%{
+        transform: translateX(0.4vw) translateY(-100px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race112m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.8vw) translateY(-70px);
+    }
+    80%{
+        transform: translateX(0.4vw) translateY(-130px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-700px);
+    }
+}
+
+@keyframes race212m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.8vw) translateY(-80px);
+    }
+    80%{
+        transform: translateX(0.4vw) translateY(-100px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race312m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.8vw) translateY(-90px);
+    }
+    80%{
+        transform: translateX(0.4vw) translateY(-100px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+//races 3 car
+@keyframes race022m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.4vw) translateY(-90px);
+    }
+    80%{
+        transform: translateX(0.7vw) translateY(-100px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race122m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.4vw) translateY(-100px);
+    }
+    80%{
+        transform: translateX(0.7vw) translateY(-60px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race222m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.4vw) translateY(-100px);
+    }
+    80%{
+        transform: translateX(0.7vw) translateY(-130px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-700px);
+    }
+}
+
+@keyframes race322m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.4vw) translateY(-60px);
+    }
+    80%{
+        transform: translateX(0.7vw) translateY(-70px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+//races 4 car
+@keyframes race032m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.2vw) translateY(-50px);
+    }
+    80%{
+        transform: translateX(0.6vw) translateY(-80px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race132m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.2vw) translateY(-60px);
+    }
+    80%{
+        transform: translateX(0.6vw) translateY(-90px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race232m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.2vw) translateY(-80px);
+    }
+    80%{
+        transform: translateX(0.6vw) translateY(-80px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race332m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.2vw) translateY(-100px);
+    }
+    80%{
+        transform: translateX(0.6vw) translateY(-130px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-700px);
+    }
+}
+
+
+
+
+// case 3
+//races 1 car
+@keyframes race003m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.2vw) translateY(-80px);
+    }
+    80%{
+        transform: translateX(0.7vw) translateY(-90px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-700px);
+    }
+}
+
+@keyframes race103m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.2vw) translateY(-90px);
+    }
+    80%{
+        transform: translateX(0.7vw) translateY(-70px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race203m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.2vw) translateY(-60px);
+    }
+    80%{
+        transform: translateX(0.7vw) translateY(-70px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race303m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.2vw) translateY(-80px);
+    }
+    80%{
+        transform: translateX(0.7vw) translateY(-90px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+
+//races 2 car
+@keyframes race013m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.8vw) translateY(-90px);
+    }
+    80%{
+        transform: translateX(0.4vw) translateY(-80px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race113m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.8vw) translateY(-100px);
+    }
+    80%{
+        transform: translateX(0.4vw) translateY(-130px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-700px);
+    }
+}
+
+@keyframes race213m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.8vw) translateY(-90px);
+    }
+    80%{
+        transform: translateX(0.4vw) translateY(-80px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race313m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.8vw) translateY(-100px);
+    }
+    80%{
+        transform: translateX(0.4vw) translateY(-70px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+//races 3 car
+@keyframes race023m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.4vw) translateY(-60px);
+    }
+    80%{
+        transform: translateX(0.7vw) translateY(-70px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race123m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.4vw) translateY(-60px);
+    }
+    80%{
+        transform: translateX(0.7vw) translateY(-60px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race223m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.4vw) translateY(-110px);
+    }
+    80%{
+        transform: translateX(0.7vw) translateY(-130px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-700px);
+    }
+}
+
+@keyframes race323m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.4vw) translateY(-60px);
+    }
+    80%{
+        transform: translateX(0.7vw) translateY(-100px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+//races 4 car
+@keyframes race033m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.2vw) translateY(-100px);
+    }
+    80%{
+        transform: translateX(0.6vw) translateY(-80px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race133m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.2vw) translateY(-40px);
+    }
+    80%{
+        transform: translateX(0.6vw) translateY(-60px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race233m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.2vw) translateY(-40px);
+    }
+    80%{
+        transform: translateX(0.6vw) translateY(-60px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-500px);
+    }
+}
+
+@keyframes race333m {
+    0%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+    30%{
+        transform: translateX(0.2vw) translateY(-80px);
+    }
+    80%{
+        transform: translateX(0.6vw) translateY(-140px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(-700px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes case1 {
+    0%{
+        transform: translateX(0.5vw) translateY(200px);
+    }
+    100%{
+        transform: translateX(0.5vw) translateY(0px);
+    }
+}
+
+@keyframes track {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(var(--th));
+    }
+}
+
+@keyframes track-reset {
+    0% {
+        transform: translateY(var(--th)) scale(1);
+    }
+    30% {
+        transform: scale(.9) translateY(calc((var(--th) / 3) * 2));
+    }
+    60% {
+        transform: scale(.9) translateY(calc((var(--th) / 3)));
+    }
+    100% {
+        transform: translateY(0%) scale(1);
+    }
+}

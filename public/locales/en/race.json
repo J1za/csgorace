@@ -1,0 +1,10 @@
+{
+    "race": "Race",
+    "create": "Create new game",
+    "amount" : "Amount",
+    "join" : "Join",
+    "accept" : "Accept",
+    "view" : "View",
+    "cancel" : "Cancel",
+    "raceWith" : "Race with"
+}

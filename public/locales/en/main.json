@@ -1,0 +1,93 @@
+{
+    "header" : {
+        "games" : "Games",
+        "support" : "Support",
+        "top" : "Top of the Top",
+        "free" : "Bonus",
+        "logout" : "Log out",
+        "ref" : "Referral System"
+    },
+    "online" : "online",
+    "chat" : "Online chat",
+    "rules" : "Chat rules",
+    "chatSend" : "Write...",
+    "payBalance" : "Top Up Balance",
+    "notification" : "Notification",
+    "pay" : "Top Up",
+    "rights": "CSGORace All right reserved ",
+    "back" : "Back",
+    "on" : "On",
+    "off" : "Off",
+    "login" : "Log in",
+    "footer" : {
+        "info" : "Info",
+        "games" : "Games",
+        "social" : "Social",
+        "about" : "About us",
+        "terms" : "Terms of Service",
+        "privacy" : "Privacy Policy",
+        "faq" : "FAQ",
+        "roullete" : "Roullete",
+        "crash" : "Crash",
+        "race" : "Race",
+        "streetrace" : "Streetrace",
+        "fair" : "Provably Fair"
+    },
+    "chatMenu" : {
+        "profile" : "Profile",
+        "mute" : "Mute",
+        "enterMuteHours" : "Enter mute hours",
+        "delete" : "Delete message",
+        "ban" : "Ban",
+        "rules" : "Chat rules",
+        "count" : "Hours"
+    },
+    "old" : "To continue using this site we need to confirm that you are over 18 and accept the Terms or Service",
+    "older" : "Yes, I’m 18 or older",
+    "acceptBtn" : "I accept",
+    "chatRules" : {
+        "hello" : "Welcome to the chat of CSGORace. In order to create pleasant environment in our community we decided to set up a few simple rules:",
+        "points" : {
+            "p1" : "Begging is forbidden",
+            "p2" : "No offending",
+            "p3" : "Try to not use curses",
+            "p4" : "No spam",
+            "p5" : "You can communicate only by using the language of this chat",
+            "p6" : "Do not send outer links without moderator approval",
+            "p7" : "Do not advertise any social media accounts",
+            "p8" : "Message must contain more than 1 word",
+            "p9" : "No baseless claims toward website"
+        },
+        "mute" : "After the violation of any listed above rules, you will receive a warning from our moderator and if you do not comply, you will be muted for 7 days",
+        "ban" : "If you are confident that didn’t break any rules and was unfairly banned, feel free to contact our support team",
+        "thanks" : "Enjoy your time :)"
+    },
+    "notificationNone" : "No notifications yet",
+    "levelPopup" : {
+        "continue" : "Сontinue",
+        "open" : "Available",
+        "newLevel" : "New level"
+    },
+    "notificationTypes" : {
+        "1" : "Your ticket #",
+        "1,1" : " has been answered by our support",
+        "2" : "Your ticket #",
+        "2,1" : " has been closed by our support",
+        "3" : "Your daily withdrawal limit has been increased up to ",
+        "4" : "Your daily withdrawal limit has not been increased",
+        "5" : "You have been awarded of ",
+        "5,1" :  "Fuel Drops for taking  ",
+        "5,2" : " place in our Daily Top",
+        "6" : "You have not been awarded of ",
+        "6,1" : " Fuel Drops for taking ",
+        "6,2" : " place in our Daily Top because of not sufficient monthly deposit",
+        "7" : "You have been awarded of ",
+        "7,1" : " Fuel Drops for taking ",
+        "7,2" : " place in our Monthly Top",
+        "8" : "You have not been awarded of ",
+        "8,1" : " Fuel Drops for taking ",
+        "8,2" : " place in our Monthly Top because of not sufficient monthly deposit",
+        "9" : "You have achieved \""
+
+    }
+}

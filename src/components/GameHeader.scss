@@ -1,0 +1,181 @@
+.game-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    height: 58px;
+    h1{
+        color: #E8E13F;
+        font-size: 1.2rem;
+        line-height: 1.15rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        svg{
+            width: 24px;
+            height: 24px;
+            margin-left: 10px;
+            margin-top: 4px;
+            cursor: pointer;
+            &.game-header-info{
+                opacity: .4;
+                transition-duration: .2s;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            margin-left: 10px;
+            svg{
+                margin-left: 0px;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100px;
+                top: -100px;
+                cursor: pointer;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                transform: rotateZ(45deg);
+                background: #1B1F2A;
+                left: calc(50% - 12px);
+                backdrop-filter: blur(50px);
+                border-radius: 2px;
+                top: 130%;
+                transition-duration: .1s;
+                opacity: 0;
+                visibility: hidden;
+            }
+            &-popup{
+                position: absolute;
+                min-width: 280px;
+                width: 280px;
+                height: auto;
+                padding: 10px 14px;
+                border: 1px solid rgba(0, 0, 0, 0.16);
+                background: #1B1F2A;
+                backdrop-filter: blur(50px);
+                box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.25);
+                border-radius: 6px;
+                border-top: none;
+                top: 150%;
+                transition-duration: .1s;
+                opacity: 0;
+                z-index: 1;
+                visibility: hidden;
+                transform: translateY(40px);
+                .popup{
+                    &-name{
+                        color: #E8E13F;
+                        font-size: 0.8rem;
+                        line-height: 1rem;
+                        font-weight: bold;
+                        margin-bottom: 8px;
+                    }
+                    &-text{
+                        color: #fff;
+                        font-size: 0.6rem;
+                        font-weight: normal;
+                        line-height: 1rem;
+                    }
+                }
+            }
+            &:hover {
+                border: none;
+                &::after{
+                    opacity: 1;
+                    visibility: visible;
+                    transform: rotateZ(45deg) translateY(0px);
+                }
+                .info {
+                    &-popup {
+                        opacity: 1;
+                        visibility: visible;
+                        transform: translateY(0px);
+                    }
+                }
+            }
+        }
+    }
+    .timer{
+        display: flex;
+        align-items: center;
+        background: rgba(75, 104, 255, 0.1);
+        border-radius: 8px;
+        height: 38px;
+        padding: 0px 14px;
+        min-width: 230px;
+        svg{
+            margin-right: 13px;
+        }
+        span{
+            color: #FFFFFF;
+            font-size: 0.8rem;
+            line-height: 1.1rem;
+        }
+    }
+    .bankroll{
+        display: flex;
+        align-items: center;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.6rem;
+        line-height: 0.8rem;
+        font-weight: bold;
+        .fuel{
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+            svg{
+                margin-bottom: 2px;
+            }
+            span{
+                color: #FFFFFF;
+                font-size: 0.7rem;
+                line-height: 1rem;
+                margin-left: 6px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .game-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0px;
+        height: auto;
+        position: relative;
+        h1{
+            font-size: 0.9rem;
+            svg{
+                width: 20px;
+                height: 20px;
+                margin-left: 6px;
+                margin-top: 0px;
+            }
+            .info{
+                &-popup{
+                    left: -105px;
+                }
+            }
+        }
+        .timer{
+            width: 100%;
+            position: absolute;
+            top: 88px;
+            justify-content: center;
+        }
+    }
+}

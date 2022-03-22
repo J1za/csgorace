@@ -1,0 +1,98 @@
+.wrapper{
+    width: 100%;
+    min-height: calc(var(--vh, 1vh) * 100);
+    height: calc(var(--vh, 1vh) * 100);
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    position: -webkit-sticky;
+    &-content{
+        height: calc(calc(var(--vh, 1vh) * 100) - 64px);
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        padding: 17px 30px 0px 9px;
+        &-body{
+            width: 100%;
+            padding-left: 30px;
+            padding-right: 40px;
+            height: 100%;
+            overflow-y: auto;
+            padding-bottom: 30px;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+        }
+        &.banner-wrapper-content{
+            height: calc(calc(var(--vh, 1vh) * 100) - 64px - 48px);
+        }
+    }
+    &-mobile{
+        display: none;
+    }
+}
+
+@media screen and ( max-width: 1024px ){
+    .wrapper{
+        width: 100vw;
+        &-content{
+            height: calc(calc(var(--vh, 1vh) * 100) - 56px - 68px);
+            padding: 14px 15px 0px 15px;
+            flex-direction: column;
+            width: 100%;
+            &-body{
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            &.banner-wrapper-content{
+                height: calc(calc(var(--vh, 1vh) * 100) - 56px - 68px - 40px);
+            }
+        }
+        &-mobile{
+            width: 100%;
+            height: 68px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #191C24;
+            li{
+                flex: 1;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                a{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+                    svg{
+                        height: 32px;
+                        path{
+                            fill: rgba(255, 255, 255, 0.2);
+                        }
+                    }
+                    span{
+                        font-size: 0.5rem;
+                        line-height: 0.7rem;
+                        font-weight: bold;
+                        color: rgba(255, 255, 255, 0.2);
+                    }
+                    &.active{
+                        svg{
+                            height: 32px;
+                            path{
+                                fill: #E8E13F;
+                            }
+                        }
+                        span{
+                            color: #E8E13F;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

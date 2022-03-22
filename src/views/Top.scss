@@ -1,0 +1,310 @@
+.top{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    &-header{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 45px;
+        height: 38px;
+        h2{
+            color: #E8E13F;
+            font-size: 1.2rem;
+            line-height: 1.55rem;
+            font-weight: bold;
+        }
+        .timer{
+            background: rgba(75, 104, 255, 0.1);
+            height: 38px;
+            padding: 0px 16px;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            border-radius: 84px;
+            color: #4B68FF;
+            font-size: 0.8rem;
+            line-height: 1.1rem;
+            font-weight: bold;
+            min-width: 200px;
+            svg{
+                margin-right: 12px;
+            }
+        }
+    }
+    &-best{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 22px;
+        height: 350px;
+    }
+    &-list{
+        display: flex;
+        flex-direction: column;
+        &-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 55px;
+            padding: 7px;
+            background: #1B1F2A;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            button{
+                flex: 1;
+                border-radius: 12px;
+                height: 100%;
+                font-size: 0.6rem;
+                line-height: 0.8rem;
+                font-weight: bold;
+                color: rgba(255, 255, 255, 0.2);
+                &:not(:last-child){
+                    margin-right: 7px;
+                }
+                &.active{
+                    background: #E8E13F;
+                    color: #141720;
+                }
+            }
+        }
+        &-player{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            height: 46px;
+            padding: 0px 16px;
+            background: #1B1F2A;
+            border-radius: 12px;
+            margin-bottom: 8px;
+            .number{
+                width: 34px;
+                color: rgba(255, 255, 255, 0.4);
+                font-size: 0.6rem;
+                line-height: 0.8rem;
+                font-weight: bold;
+                padding-left: 10px;
+            }
+            .image{
+                border: 2px solid rgba(255, 255, 255, 0.2);
+                border-radius: 11px;
+                width: 40px;
+                height: 40px;
+                padding: 2px;
+                margin-right: 15px;
+                &.grey{
+                    border-color: #A3A5B7;
+                }
+                &.blue{
+                    border-color: #93C7F4;
+                }
+                &.yellow{
+                    border-color: #E8E13F;
+                }
+                &.orange{
+                    border-color: #E8903F;
+                }
+                &.violet{
+                    border-color: #BC93FE;
+                }
+                &.red{
+                    border-color: #E8533F;
+                }
+                &.fire{
+                    border-color: #FD6228;
+                }
+                img{
+                    width: 100%;
+                    border-radius: 7px;
+                    &.streamer{
+                        filter: blur(5px);
+                    }
+                }
+            }
+            .name{
+                color: #FFFFFF;
+                font-size: 0.7rem;
+                line-height: 1rem;
+            }
+            .level{
+                position: static;
+                height: 23px;
+                border-radius: 8px;
+                padding: 0px 9px;
+                color: #000000;
+                font-size: 0.7rem;
+                background-color: rgba(#fff, .1);
+                min-width: 18px;
+                display: flex;
+                align-items: center;
+                line-height: 0.8rem;
+                margin: auto;
+                margin-left: 8px;
+                &.grey{
+                    background: #A3A5B7;
+                }
+                &.blue{
+                    background: #93C7F4;
+                }
+                &.yellow{
+                    background: #E8E13F;
+                }
+                &.orange{
+                    background: #E8903F;
+                }
+                &.violet{
+                    background: #BC93FE;
+                }
+                &.red{
+                    background: #E8533F;
+                }
+                &.fire{
+                    background: linear-gradient(82.31deg, #FD6228 67.56%, #FFBA2D 111.37%);
+                }
+            }
+            .wagered{
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 30px;
+                padding-left: 8px;
+                padding-right: 8px;
+                display: flex;
+                align-items: center;
+                height: 28px;
+                svg{
+                    margin-right: 7px;
+                }
+                color: #FFFFFF;
+                font-size: 0.7rem;
+                line-height: 1rem;
+                font-weight: bold;
+                &.hide{
+                    opacity: 0;
+                }
+            }
+            .bet{
+                display: flex;
+                align-items: center;
+                width: 90px;
+                margin-left: 13px;
+                svg{
+                    margin-right: 8px;
+                }
+                color: #FFFFFF;
+                font-size: 0.7rem;
+                line-height: 1rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .top{
+        &-header{
+            margin-bottom: 20px;
+            height: 29px;
+            h2{
+                font-size: 0.9rem;
+                line-height: 1.25rem;
+            }
+            .timer{
+                height: 29px;
+                padding: 0px 12px;
+                font-size: 0.6rem;
+                line-height: 0.8rem;
+                min-width: 160px;
+            }
+        }
+        &-best{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 17px;
+            height: auto;
+        }
+        &-list{
+            flex-direction: row;
+            flex-wrap: wrap;
+            &-header{
+                width: 100%;
+                button{
+                    flex: 1;
+                    border-radius: 12px;
+                    height: 100%;
+                    font-size: 0.6rem;
+                    line-height: 0.8rem;
+                    font-weight: bold;
+                    color: rgba(255, 255, 255, 0.2);
+                    &:not(:last-child){
+                        margin-right: 7px;
+                    }
+                    &.active{
+                        background: #E8E13F;
+                        color: #141720;
+                    }
+                }
+            }
+            &-player{
+                width: calc(50% - 9px);
+                margin-bottom: 18px;
+                height: auto;
+                flex-wrap: wrap;
+                padding: 11px 14px 20px 15px;
+                background: #1B1F2A;
+                border-radius: 12px;
+                position: relative;
+                &:nth-child(even){
+                    margin-right: 18px;
+                }
+                .number{
+                    width: 16px;
+                    padding-left: 0px;
+                    font-size: 0.6rem;
+                }
+                .image{
+                    width: 24px;
+                    height: 24px;
+                    padding: 2px;
+                    border-radius: 6px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        width: 100%;
+                        border-radius: 3px;
+                    }
+                }
+                .name{
+                    font-size: 0.6rem;
+                    line-height: 0.8rem;
+                    margin-top: 8px;
+                    width: 100%;
+                }
+                .level{
+                    position: absolute;
+                    top: 11px;
+                    right: 14px;
+                    bottom: unset;
+                }
+                .wagered{
+                    height: 25px;
+                    font-size: 0.6rem;
+                    line-height: 0.8rem;
+                    margin-top: 8px;
+                    svg{
+                        margin-right: 6px;
+                    }
+                }
+                .bet{
+                    margin-top: 8px;
+                    svg{
+                        margin-right: 6px;
+                    }
+                    width: auto;
+                    margin-left: 8px;
+                    font-size: 0.6rem;
+                    line-height: 0.8rem;
+                }
+            }
+        }
+    }
+}

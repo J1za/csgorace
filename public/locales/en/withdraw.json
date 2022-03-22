@@ -1,0 +1,20 @@
+{
+    "search" : "Search",
+    "price" : "Price",
+    "sort" : "Sort",
+    "min" : "Min price",
+    "max" : "Max price",
+    "order" : "Order by",
+    "default" : "By default",
+    "highPrice" : "Highest price first",
+    "lowerPrice" : "Lowest price first",
+    "bestDeals" : "Best deals",
+    "withdraw" : "Withdraw",
+    "current" : "Current withdraws",
+    "trader" : "Trader",
+    "otherUser" : "You have",
+    "toComplete" : "to accept the trade",
+    "acceptTrade" : "Accept trade",
+    "preparing" : "Your trade is being prepared to be sent",
+    "transaction" : "Your transaction was confiremed by the other user and will be completed shortly"
+}

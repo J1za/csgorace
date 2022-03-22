@@ -1,0 +1,674 @@
+.free-page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    // overflow: hidden;
+    transition-duration: .2s;
+    .free-header{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        z-index: 3;
+        position: relative;
+        margin-bottom: 23px;
+        h1{
+            color: #E8E13F;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            svg{
+                width: 24px;
+                height: 24px;
+                margin-left: 10px;
+                margin-top: 4px;
+                cursor: pointer;
+                opacity: .4;
+                transition-duration: .2s;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            .info{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                margin-left: 10px;
+                svg{
+                    margin-left: 0px;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100px;
+                    top: -100px;
+                    cursor: pointer;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 24px;
+                    height: 24px;
+                    transform: rotateZ(45deg);
+                    background: #1B1F2A;
+                    left: calc(50% - 12px);
+                    backdrop-filter: blur(50px);
+                    border-radius: 2px;
+                    top: 130%;
+                    transition-duration: .1s;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                &-popup{
+                    position: absolute;
+                    min-width: 280px;
+                    width: 280px;
+                    height: auto;
+                    padding: 10px 14px;
+                    border: 1px solid rgba(0, 0, 0, 0.16);
+                    background: #1B1F2A;
+                    backdrop-filter: blur(50px);
+                    box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.25);
+                    border-radius: 6px;
+                    border-top: none;
+                    top: 150%;
+                    transition-duration: .1s;
+                    opacity: 0;
+                    z-index: 1;
+                    visibility: hidden;
+                    transform: translateY(40px);
+                    .popup{
+                        &-name{
+                            color: #E8E13F;
+                            font-size: 0.8rem;
+                            line-height: 1rem;
+                            font-weight: bold;
+                            margin-bottom: 8px;
+                        }
+                        &-text{
+                            color: #fff;
+                            font-size: 0.6rem;
+                            font-weight: normal;
+                            line-height: 1rem;
+                        }
+                    }
+                }
+                &:hover {
+                    border: none;
+                    &::after{
+                        opacity: 1;
+                        visibility: visible;
+                        transform: rotateZ(45deg) translateY(0px);
+                    }
+                    .info {
+                        &-popup {
+                            opacity: 1;
+                            visibility: visible;
+                            transform: translateY(0px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .free-body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
+        // top: -125px;
+        border-radius: 12px;
+        overflow: hidden;
+        margin-bottom: -130px;
+        &-track{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            &-img{
+                width: 100%;
+                border-radius: 12px;
+                overflow: hidden;
+                // width: 80vw;
+                // margin-right: -20vw;
+                // margin-left: -28vw;
+                // margin-top: -10vw;
+            }
+        }
+        &-cars{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            @for $i from 1 through 5 {
+                .car-item:nth-child(#{$i}) {
+                    left: #{20.65 + $i * 4.57 + '%'};
+                }
+            }
+            @for $i from 6 through 11 {
+                .car-item:nth-child(#{$i}) {
+                    left: #{20.3 + $i * 4.66 + '%'};
+                }
+            }
+            .car-item{
+                width: 5%;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                border: none;
+                z-index: 2;
+                top: 22%;
+                img{
+                    width: 100%;
+                    cursor: pointer;
+                    opacity: 0;
+                    visibility: hidden;
+                    pointer-events: none;
+                    display: block;
+                    // height: 70px;
+                    &.visible{
+                        opacity: 1;
+                        visibility: visible;
+                        pointer-events: all;
+                    }
+                    &.opened{
+                        filter: brightness(30%);
+                    }
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100px;
+                    top: -100px;
+                    cursor: pointer;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    transform: rotateZ(45deg);
+                    background: rgba(0, 0, 0, 0.62);
+                    left: calc(50% - 15px);
+                    backdrop-filter: blur(50px);
+                    border-radius: 2px;
+                    top: 130%;
+                    transition-duration: .1s;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                &-popup{
+                    position: absolute;
+                    min-width: 211px;
+                    height: auto;
+                    padding: 12px 16px;
+                    border: 1px solid rgba(0, 0, 0, 0.16);
+                    background: rgba(0, 0, 0, 0.62);
+                    backdrop-filter: blur(50px);
+                    box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.25);
+                    border-radius: 8px;
+                    border-top: none;
+                    top: 150%;
+                    transition-duration: .1s;
+                    opacity: 0;
+                    z-index: 1;
+                    visibility: hidden;
+                    transform: translateY(40px);
+                    .popup{
+                        &-name{
+                            color: #FFFFFF;
+                            font-size: 1.2rem;
+                            line-height: 1.6rem;
+                            font-weight: bold;
+                            margin-bottom: 8px;
+                        }
+                        &-title{
+                            color: #FFFFFF;
+                            font-size: 0.9rem;
+                            line-height: 1.2rem;
+                            font-weight: bold;
+                            margin-bottom: 8px;
+                        }
+                        &-items{
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            &-value{
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                .amount{
+                                    display: flex;
+                                    align-items: center;
+                                    span{
+                                        color: #FFC700;
+                                        font-size: 0.9rem;
+                                        line-height: 1.2rem;
+                                        margin-right: 10px;
+                                        width: 50px;
+                                    }
+                                }
+                                .chance{
+                                    margin-left: 10px;
+                                    font-size: 0.9rem;
+                                    line-height: 1.2rem;
+                                    color: #fff;
+                                    font-weight: bold;
+                                    white-space: nowrap;
+                                    width: 100%;
+                                }
+                                &:not(:last-child){
+                                    margin-bottom: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    border: none;
+                    &::after{
+                        opacity: 1;
+                        visibility: visible;
+                        transform: rotateZ(45deg) translateY(0px);
+                    }
+                    .car-item {
+                        &-popup {
+                            opacity: 1;
+                            visibility: visible;
+                            transform: translateY(0px);
+                        }
+                    }
+                }
+            }
+        }
+        &-screen{
+            position: absolute;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20%;
+            height: 20%;
+            top: 50.1%; left: 33.75%;
+            span{
+                font-size: 2vw;
+                font-weight: 500;
+                color: #FFB800;
+            }
+            svg{
+                width: 2.5vw;
+                height: 2.5vw;
+                margin-left: .25vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .free-page{
+        padding-bottom: 70vw;
+        overflow: hidden;
+        .free-header{
+            h1{
+                font-size: 0.9rem;
+                svg{
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 6px;
+                    margin-top: 0px;
+                }
+                .info{
+                    &-popup{
+                        left: -90px;
+                    }
+                }
+            }
+        }
+        .free-body{
+            transform: rotate(-90deg);
+            margin-top: 30vw;
+            width: 160vw;
+            margin-left: -33vw;
+            overflow: hidden;
+            &-cars{
+                .car-item{
+                    &:hover:first-child{
+                        .car-item-popup{
+                            transform: translateY(45px) rotate(90deg);
+                        }
+                    }
+                    &:hover:nth-child(2){
+                        .car-item-popup{
+                            transform: translateY(30px) rotate(90deg);
+                        }
+                    }
+                    &:hover:nth-child(3){
+                        .car-item-popup{
+                            transform: translateY(15px) rotate(90deg);
+                        }
+                    }
+                    &-popup{
+                        transform: translateY(40px) rotate(90deg);
+                        .popup{
+                            &-name{
+                                font-size: 1rem;
+                                line-height: 1.2rem;
+                                margin-bottom: 4px;
+                            }
+                            &-title{
+                                font-size: 0.7rem;
+                                line-height: 1rem;
+                                margin-bottom: 4px;
+                            }
+                            &-items{
+                                &-value{
+                                    .amount{
+                                        span{
+                                            font-size: 0.7rem;
+                                            line-height: 1rem;
+                                            margin-right: 6px;
+                                        }
+                                    }
+                                    .chance{
+                                        margin-left: 6px;
+                                        font-size: 0.7rem;
+                                        line-height: 1rem;
+                                    }
+                                    &:not(:last-child){
+                                        margin-bottom: 4px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        .car-item {
+                            &-popup {
+                                opacity: 1;
+                                visibility: visible;
+                                transform: translateY(0px) rotate(90deg);
+                            }
+                        }
+                    }
+                }
+            }
+            &-screen{
+                top: 52.6%; left: 33.75%;
+                span{
+                    font-size: 4vw;
+                }
+                svg{
+                    width: 4vw;
+                    height: 4vw;
+                    margin-left: .25vw;
+                }
+            }
+        }
+        .free-body-track-img{
+            margin-bottom: -4vw;
+        }
+    }
+
+}
+
+//----------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
+// Cars animation
+$cars-count: 11;
+$animation-stages: 100; // it is used in keyframes like SCSS variable
+.free-body-cars {
+    --car-run-duration-1: 14s;
+    --car-run-duration-2: 12s;
+    --car-run-duration-3: 10s;
+
+    --animation-stages: #{$animation-stages}; // it is used in all other places like CSS variable
+
+    --animation-step-duration-1: calc(var(--car-run-duration-1) / var(--animation-stages) + 0.1s);
+    --animation-step-duration-2: calc(var(--car-run-duration-1) / var(--animation-stages) + 0.1s);
+    --animation-step-duration-3: calc(var(--car-run-duration-1) / var(--animation-stages) + 0.1s);
+
+    --animation-step-function: linear;
+
+}
+.free-body-cars {
+    @for $i from 1 through $cars-count {
+        --car-translateX-#{$i}: 0;
+        --car-translateY-#{$i}: 0;
+        --car-rotate-#{$i}: 0; // in degrees
+    }
+}
+@mixin animationInitialization($i, $level) {
+    .car-run-#{$i} {
+        animation: carAnimation var(--car-run-duration-#{$level}) forwards;
+    }
+
+    .free-body-cars {
+        &[class*="car-run"] {
+            .car-item:nth-child(#{$i}) {
+                transition: transform var(--animation-step-duration-#{$level}) var(--animation-step-function) !important;
+            }
+        }
+        .car-item:nth-child(#{$i}) {
+            transition: transform 0s;
+            transform: translate(var(--car-translateX-#{$i}), var(--car-translateY-#{$i})) rotate(var(--car-rotate-#{$i}));
+        }
+    }
+}
+@for $i from 1 through 4 {
+    @include animationInitialization($i, 1)
+}
+@for $i from 5 through 8 {
+    @include animationInitialization($i, 2)
+}
+@for $i from 9 through 11 {
+    @include animationInitialization($i, 3)
+}
+
+@mixin setCarPosition($car-number, $st, $tx, $ty, $rot) {
+    --car-rideX-step#{$st}-#{$car-number}: #{$tx};
+    --car-rideY-step#{$st}-#{$car-number}: #{$ty};
+    --car-rotateZ-step#{$st}-#{$car-number}: #{$rot};
+}
+@mixin preventOthersCarsRun($prevent-car-number) {
+    @for $i from 1 through $cars-count {
+        @for $stIdx from 1 through $cars-count {
+            @if ($i != $prevent-car-number) {
+                @include setCarPosition($i, $stIdx, 0, 0, 0);
+            }
+        }
+    }
+}
+@mixin setCarLeavingGarage($car-ride-number) {
+    @include setCarPosition($car-ride-number, 1, -15%,    28%,  30deg);
+    @include setCarPosition($car-ride-number, 2, -37.5%,    45%,  45deg);
+    @include setCarPosition($car-ride-number, 3, -50%,    55%,  60deg);
+    @include setCarPosition($car-ride-number, 4, -62.5%,    65%,  75deg);
+    @include setCarPosition($car-ride-number, 5, -75%,    70%,  90deg);
+}
+@mixin setCarStartLine($car-ride-number, $length: 0) { // only for cars 2-11
+    // length - is a count of keyframes of START line
+    @if ( $length > 0 ) {
+        @for $i from 1 through $length {
+            @include setCarPosition($car-ride-number, 6 + $i - 1,  0% - (50% * $i), 70%, 90deg);
+        }
+    }
+    @include setCarPosition($car-ride-number, 6 + $length, -2% - ($shift-content * ($length + 1)),    60%,  80deg);
+}
+@mixin setCarStandartRoute($car-ride-number, $offsetX: 0, $from-point: 5) {
+    // before rotate
+    @include setCarPosition(#{$car-ride-number}, $from-point, -65% + $offsetX,  87.5%,  61deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 1, -80% + $offsetX,  95%,  62.25deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 2, -95% + $offsetX,  102.5%,  63.5deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 3, -95% + $offsetX,  102.5%,  63.5deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 4, -95% + $offsetX,  102.5%,  63.5deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 5, -95% + $offsetX,  102.5%,  63.5deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 6, -95% + $offsetX,  102.5%,  63.5deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 7, -95% + $offsetX,  102.5%,  63.5deg);
+    // rotate
+    @include setCarPosition(#{$car-ride-number}, $from-point + 8, -110% + $offsetX,  110%,  65deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 9, -150% + $offsetX, 140%,  50deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 10, -180% + $offsetX, 170%,  40deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 11, -215% + $offsetX, 210%,  35deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 12, -240% + $offsetX, 245%,  30deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 13, -265% + $offsetX, 290%,  25deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 14, -285% + $offsetX, 325%, 20deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 15, -300% + $offsetX, 390%, 10deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 16, -310% + $offsetX, 440%, 0deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 17, -310% + $offsetX, 500%, 0deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 18, -310% + $offsetX, 540%, -10deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 19, -310% + $offsetX, 590%, -10deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 20, -300% + $offsetX, 650%, -15deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 21, -290% + $offsetX, 700%, -20deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 22, -270% + $offsetX, 770%, -25deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 23, -250% + $offsetX, 820%, -30deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 24, -220% + $offsetX, 860%, -40deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 25, -190% + $offsetX, 900%, -50deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 26, -160% + $offsetX, 930%, -60deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 27, -130% + $offsetX, 960%, -65deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 28, -90% + $offsetX, 980%, -70deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 29, -60% + $offsetX, 1010%, -80deg);
+    // line
+    @include setCarPosition(#{$car-ride-number}, $from-point + 30, -10% + $offsetX, 1020%, -90deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 31, 50% + $offsetX, 1020%, -90deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 32, 110% + $offsetX, 1020%, -90deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 33, 170% + $offsetX, 1020%, -90deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 34, 230% + $offsetX, 1020%, -90deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 35, 290% + $offsetX, 1020%, -90deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 36, 350% + $offsetX, 1020%, -90deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 37, 410% + $offsetX, 1020%, -90deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 38, 470% + $offsetX, 1020%, -90deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 39, 530% + $offsetX, 1020%, -90deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 40, 590% + $offsetX, 1020%, -90deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 41, 650% + $offsetX, 1020%, -90deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 42, 710% + $offsetX, 1020%, -90deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 43, 770% + $offsetX, 1020%, -90deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 44, 830% + $offsetX, 1020%, -90deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 45, 890% + $offsetX, 1020%, -90deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 46, 950% + $offsetX, 1020%, -90deg);
+    //rotate
+    @include setCarPosition(#{$car-ride-number}, $from-point + 47, 990% + $offsetX, 1000%, -100deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 48, 1030% + $offsetX, 980%, -110deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 49, 1060% + $offsetX, 950%, -120deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 50, 1090% + $offsetX, 920%, -130deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 51, 1120% + $offsetX, 890%, -140deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 52, 1150% + $offsetX, 860%, -150deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 53, 1180% + $offsetX, 830%, -160deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 54, 1200% + $offsetX, 780%, -165deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 55, 1220% + $offsetX, 720%, -165deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 56, 1240% + $offsetX, 660%, -165deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 57, 1240% + $offsetX, 600%, -170deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 58, 1245% + $offsetX, 545%, -180deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 59, 1250% + $offsetX, 490%, -190deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 60, 1240% + $offsetX, 440%, -200deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 61, 1230% + $offsetX, 390%, -210deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 62, 1210% + $offsetX, 350%, -215deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 63, 1190% + $offsetX, 310%, -215deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 64, 1180% + $offsetX, 260%, -220deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 65, 1160% + $offsetX, 220%, -230deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 66, 1130% + $offsetX, 190%, -230deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 67, 1100% + $offsetX, 160%, -235deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 68, 1070% + $offsetX, 130%, -240deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 69, 1040% + $offsetX, 100%, -245deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 70, 1000% + $offsetX, 80%, -250deg);
+    @include setCarPosition(#{$car-ride-number}, $from-point + 71, 945% + $offsetX, 75%, -260deg);
+}
+@mixin setCarFinishLine($car-ride-number, $from-offsetX: 890%, $length: 13, $from-point: 77) {
+    // length - is a count of keyframes of FINISH line
+    @for $i from 1 through $length {
+        @include setCarPosition($car-ride-number, $from-point + $i - 1, $from-offsetX - (60 * ($i - 1)), 70%, -270deg);
+    }
+}
+@mixin setCarParking($car-ride-number) { // from 90 - 100
+    //parking
+    @include setCarPosition($car-ride-number, 90, 110%, 70%, -270deg);
+    @include setCarPosition($car-ride-number, 91, 50%, 70%, -270deg);
+    @include setCarPosition($car-ride-number, 92, -10%, 70%, -270deg);
+    @include setCarPosition($car-ride-number, 93, -40%, 70%, -270deg);
+    @include setCarPosition($car-ride-number, 94, -60%, 70%, -270deg);
+    @include setCarPosition($car-ride-number, 95, -70%, 70%, -270deg);
+    @include setCarPosition($car-ride-number, 96, -75%, 70%, -270deg);
+    @include setCarPosition($car-ride-number, 97, -50%, 46%, -300deg);
+    @include setCarPosition($car-ride-number, 98, -15%, 23%, -330deg);
+    @include setCarPosition($car-ride-number, 99, 0, 0, -360deg);
+    @include setCarPosition($car-ride-number, 100, 0, 0, -360deg);
+}
+@for $i from 1 through $cars-count {
+    .car-run-#{$i} {
+        @include preventOthersCarsRun($i);
+    }
+}
+.car-run-1 {
+    // start // custom start only for first car
+    @include setCarPosition(1, 1, -12.5%,    20%,  15deg);
+    @include setCarPosition(1, 2, -25%,    40%,  30deg);
+    @include setCarPosition(1, 3, -37.5%,    60%,  45deg);
+    @include setCarPosition(1, 4, -50%,    80%,  60deg);
+    //
+    @include setCarStandartRoute(1); //keyframe from [5 - 76]
+    @include setCarFinishLine(1); // keyframe from [77 - 89]
+    @include setCarParking(1); //keyframe from [90 - 100]
+}
+$shift-content: 93.5%; //number 96%/97%/98% appeared cause of shift cars garages and so cars positions from left to right / not every where i used this variable bc of my lazy^_^
+$shift-content-2: 100%;
+$var: 0;
+@for $i from 2 through 11 {
+    .car-run-#{$i} {
+        @include setCarLeavingGarage($i);
+        @include setCarStartLine($i, $var + 1);
+        @include setCarStandartRoute($i, -$shift-content * ($i - 1), 7 + $var);
+        @if ($i < 9) {
+            @include setCarFinishLine($i, 770% - $shift-content-2 * ($i - 2), 11 - $var, 79 + $var);
+        } @else { //bc after 770 - 100 * ( 9 - 2 ) ~<= 0
+            @include setCarFinishLine($i, 770% - $shift-content-2 * ($i - 2), 11 - $i, 79 + $var);
+        }
+        @include setCarParking($i);
+    }
+    $var: $var + 2;
+}
+@mixin setCarAnimationPosition($st: 0) {
+    @if ($st == '0') {
+        @for $i from 1 through $cars-count {
+            --car-translateX-#{$i}: 0;
+            --car-translateY-#{$i}: 0;
+            --car-rotate-#{$i}: 0;
+        }
+    } @else {
+        @for $i from 1 through $cars-count {
+            --car-translateX-#{$i}: var(--car-rideX-step#{$st}-#{$i});
+            --car-translateY-#{$i}: var(--car-rideY-step#{$st}-#{$i});
+            --car-rotate-#{$i}: var(--car-rotateZ-step#{$st}-#{$i});
+        }
+    }
+}
+
+@-webkit-keyframes carAnimation {
+    @for $i from 0 through $animation-stages {
+        #{(100 / $animation-stages) * $i}% {
+            @include setCarAnimationPosition($i);
+        }
+    }
+}
+
+@keyframes carAnimation {
+    @for $i from 0 through $animation-stages {
+        #{(100 / $animation-stages) * $i}% {
+            @include setCarAnimationPosition($i);
+        }
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "rewards" : "Rewards",
+    "history" : "History",
+    "comingSoon" : "Coming soon",
+    "stream" : "Streamer mode",
+    "referal": "Your Referral Page",
+    "refLink" : "REFERRAL LINK",
+    "refCode" : "PROMO CODE",
+    "static" : "Statistics",
+    "profile" : "Profile",
+    "refStat" : {
+        "amount": "Amount",
+        "link" : "Link Used",
+        "promo" : "Promo Used",
+        "total" : "Total Promo Codes"
+    },
+    "table" : {
+        "roullete" : "Roullete",
+        "crash" : "Crash",
+        "race" : "Race",
+        "streetrace" : "Streetrace",
+        "deposit" : "Transactions"
+    },
+    "deposit" : "Deposit",
+    "save" : "Save",
+    "rewards_list" : {
+        "fdep" : "Первый взнос",
+        "bets" : "Профи",
+        "x20" : "Идём на взлёт",
+        "tdep" : "Банк",
+        "ref" : "Друзья",
+        "top3" : "Топ 3",
+        "chat" : "Чат",
+        "fin" : "Гранд-при"
+    },
+    "rewards_list_text" : {
+        "fdep" : "Получи 5% в своему первому депозиту",
+        "bets" : "Сделай 1000 ставок",
+        "x20" : "Слови ×20 в режиме «Crash»",
+        "tdep" : "Общий депозит должен составлять $100",
+        "ref" : "Пригласи 10 друзей с депозитом от 1 $",
+        "top3" : "Попади в Топ-3 за день",
+        "chat" : "Напиши 1000 сообщений в чат ",
+        "fin" : "Собери  7 предыдущих ачивок"
+    },
+    "rewards_list_ps" : {
+        "fdep" : "Не используй промокоды на депозит для получения ачивки",
+        "bets" : "",
+        "x20" : "",
+        "tdep" : "",
+        "ref" : "",
+        "top3" : "",
+        "chat" : "За спам в чате ты получишь бан, а ачивка будет заблокирована",
+        "fin" : ""
+    },
+    "pickUp" : "Pick up",
+    "cashOut" : "Withdraw",
+    "total" : "Total Bet",
+    "totalWith" : "Totally Withdrawn",
+    "winrate" : "Winrate",
+    "steam" : "Steam API Key",
+    "trade" : "Steam Trade URL",
+    "code" : "Promocode",
+    "enterCode" : "Enter code here",
+    "useCode" : "Use Code"
+}

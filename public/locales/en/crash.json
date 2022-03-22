@@ -1,0 +1,33 @@
+{
+    "crash": "Crash",
+    "bankroll" : "Bankroll",
+    "recent" : "Recent cashes",
+    "betAmount" : "Bet amount",
+    "autoCash" : "Autocash out",
+    "placeBet" : "Place bet",
+    "cashOut" : "Cash out",
+    "earnings" : "Earnings",
+    "next" : "next round",
+    "hash" : "Hash",
+    "latency": "Latency",
+    "round" : "Round",
+    "datetime" : "Datetime",
+    "hour" : "Hour",
+    "crashPoint" : "Crash Point",
+    "maxBet" : "Max bet amount",
+    "maxWin" : "Max win",
+    "roundHash" : "Round Hash",
+    "saltedHash" : "Salted Hash",
+    "totalPlayers" : "Total Players",
+    "player" : "Player",
+    "cashedOut" : "X",
+    "color" : "Color",
+    "car" : "Car",
+    "winner" : "Winner",
+    "table" : {
+        "player" : "Player",
+        "cashedOut" : "Cashed Out",
+        "bet" : "Bet",
+        "earnings" : "Earnings"
+    }
+}

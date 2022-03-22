@@ -1,0 +1,48 @@
+.deposit-success{
+    width: 332px;
+    padding: 33px 25px 25px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .close-popup{
+        display: none;
+    }
+    &-header{
+        font-size: 1rem;
+        line-height: 1.2rem;
+        font-weight: bold;
+        color: #E8E13F;
+        margin-bottom: 3px;
+        margin-top: 7px;
+    }
+    &-title{
+        font-size: 0.6rem;
+        line-height: 0.8rem;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+@media screen and (max-width: 1024px) { 
+    .deposit-success{
+        width: 100%;
+        padding: 33px 25px 25px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        &-header{
+            font-size: 1rem;
+            line-height: 1.2rem;
+            font-weight: bold;
+            color: #E8E13F;
+            margin-bottom: 3px;
+            margin-top: 7px;
+        }
+        &-title{
+            font-size: 0.6rem;
+            line-height: 0.8rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+}

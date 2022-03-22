@@ -1,0 +1,254 @@
+.account{
+    display: flex;
+    align-items: center;
+    &-image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 12px;
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            .user-image{
+                border: 2px solid rgba(255, 255, 255, 0.2);
+                border-radius: 11px;
+                width: 40px;
+                height: 40px;
+                padding: 2px;
+                img{
+                    width: 100%;
+                    border-radius: 7px;
+                    // &.streamer{
+                    //     filter: blur(5px);
+                    // }
+                }
+                &.grey{
+                    border-color: #A3A5B7;
+                }
+                &.blue{
+                    border-color: #93C7F4;
+                }
+                &.yellow{
+                    border-color: #E8E13F;
+                }
+                &.orange{
+                    border-color: #E8903F;
+                }
+                &.violet{
+                    border-color: #BC93FE;
+                }
+                &.red{
+                    border-color: #E8533F;
+                }
+                &.fire{
+                    border-color: #FD6228;
+                }
+            }
+            .level{
+                width: 20px;
+                height: 20px;
+                font-size: .45rem;
+                line-height: .5rem;
+                bottom: -10px;
+                display: none;
+            }
+        }
+    }
+    &-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        &-name{
+            display: flex;
+            flex-direction: column;
+            &-numbers{
+                display: flex;
+                width: 100%;
+                position: relative;
+                align-items: center;
+                justify-content: space-between;
+                .level{
+                    position: static;
+                    min-width: 34px;
+                    height: 18px;
+                    border-radius: 8px;
+                    color: #1B1F2A;
+                    font-size: 0.5rem;
+                    line-height: 0.9rem;
+                    font-weight: bold;
+                }
+            }
+            span{
+                width: 160px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-bottom: 3px;
+                color: #FFFFFF;
+                font-size: 0.7rem;
+                line-height: 1rem;
+                font-weight: bold;
+                display: block;
+            }
+            &-balance{
+                display: flex;
+                align-items: center;
+                white-space: nowrap;
+                svg{
+                    min-width: 14px;
+                    height: 20px;
+                    margin-right: 8px;
+                }
+                span{
+                    color: #FFFFFF;
+                    font-size: 0.7rem;
+                    line-height: 1rem;
+                    font-weight: bold;
+                    margin-bottom: 0px;
+                    width: auto;
+                }
+            }
+        }
+        &-links{
+            display: none;
+            &-cash{
+                background: rgba(232, 225, 63, 0.1);
+                border-radius: 8px;
+                width: 90px;
+                height: 33px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #E8E13F;
+                font-size: 0.5rem;
+                line-height: 0.7rem;
+                margin-right: 10px;
+                font-weight: bold;
+            }
+            &-deposit{
+                background: #E8E13F;
+                border-radius: 8px;
+                width: 90px;
+                height: 33px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #141720;
+                font-size: 0.5rem;
+                line-height: 0.7rem;
+                margin-right: 10px;
+                font-weight: bold;
+            }
+        }
+    }
+    &-balance{
+        margin-left: 5px;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        svg{
+            min-width: 14px;
+            margin-right: 8px;
+        }
+        span{
+            color: #FFFFFF;
+            font-size: 0.7rem;
+            line-height: 1rem;
+            font-weight: bold;
+        }
+    }
+    &.mobile{
+        // background: #2A2E3D;
+        // border-radius: 12px;
+        // padding: 20px 24px 20px 14px;
+        // margin-bottom: 28px;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        align-items: flex-start;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        margin-bottom: 10px;
+        .account{
+            &-image{
+                .level{
+                    display: flex;
+                }
+            }
+            &-nav{
+                width: 100%;
+                justify-content: space-between;
+                &-name{
+                    width: 100%;
+                    flex-direction: column;
+                    margin-bottom: 10px;
+                    .level{
+                        display: none;
+                    }
+                    &-balance{
+                        // margin-right: -20px;
+                        
+                    }
+                    span{
+                        // width: 250px;
+                        width: auto;
+                    }
+                }
+                &-links{
+                    display: flex;
+                    flex-direction: row-reverse;
+                    &-cash, &-deposit{
+                        width: 108px;
+                    }
+                    &-cash{
+                        background: rgba(232, 225, 63, 0.1);
+                        width: 105px;
+                        height: 32px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 8px;
+                        color: #E8E13F;
+                        font-size: 0.5rem;
+                        line-height: 0.7rem;
+                        // margin-left: 11px;
+                        border: 1px solid #E8E13F;
+                    }
+                    &-deposit{
+                        width: 105px;
+                        height: 32px;
+                    }
+                    // display: none;
+                }
+            }
+            &-balance{
+                span{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .account{
+        &-nav{
+            &-links{
+                // display: none;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1920px) {
+    .account{
+        &-nav{
+            &-name{
+                span{
+                    width: 230px;
+                }
+            }
+        }
+    }
+}
